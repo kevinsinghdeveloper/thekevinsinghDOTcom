@@ -27,14 +27,14 @@ export class AuthGGuard implements CanActivate {
         return true;
       } else {
           console.log("NOT LOGGED!");
-        //this.router.navigate(["/login"]);
-          this.router.navigate(['/login'], { queryParams: { returnUrl: state.url }});
+        //this.router.navigate(["/home"]);
+          this.router.navigate(['/home'], { queryParams: { returnUrl: state.url }});
         return false;
       }
   }
 
 
-  
+
 }
 
 export class AuthGuardChildService implements CanActivateChild {
@@ -48,8 +48,8 @@ export class AuthGuardChildService implements CanActivateChild {
             return true;
         } else {
             console.log("NOT LOGGED!");
-            //this.router.navigate(["/login"]);
-            this.router.navigate(['/login'], { queryParams: { returnUrl: state.url }});
+            //this.router.navigate(["/home"]);
+            this.router.navigate(['/home'], { queryParams: { returnUrl: state.url }});
             return false;
         }
     }
@@ -81,8 +81,8 @@ export class AuthGGuard implements CanActivate, CanActivateChild{
             return true;
         } else {
             //console.log("NOT LOGGED!");
-            //this.router.navigate(["/login"]);
-            this.router.navigate(['/login'], { queryParams: { returnUrl: state.url }});
+            //this.router.navigate(["/home"]);
+            this.router.navigate(['/home'], { queryParams: { returnUrl: state.url }});
             return false;
         }
     }
@@ -100,8 +100,8 @@ export class AuthGGuard implements CanActivate, CanActivateChild{
             return true;
         } else {
             //console.log("NOT LOGGED2!");
-            //this.router.navigate(["/login"]);
-            this.router.navigate(['/login'], { queryParams: { returnUrl: state.url }});
+            //this.router.navigate(["/home"]);
+            this.router.navigate(['/home'], { queryParams: { returnUrl: state.url }});
             return false;
         }
     }
