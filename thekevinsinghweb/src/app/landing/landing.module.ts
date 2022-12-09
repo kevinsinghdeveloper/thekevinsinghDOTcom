@@ -8,13 +8,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {LandingComponent} from './landing.component';
 import {ProjectsComponent} from './projects/projects.component';
 import {AboutMeComponent} from './aboutme/aboutme.component';
+import {HireMeComponent} from './hireme/hireme.component';
 
 @NgModule({
   declarations: [
     HomeComponent,
     LandingComponent,
     ProjectsComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    HireMeComponent
   ],
   imports: [
     CommonModule,

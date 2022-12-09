@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import {LandingComponent} from './landing.component';
 import {ProjectsComponent} from './projects/projects.component';
 import {AboutMeComponent} from './aboutme/aboutme.component';
+import {HireMeComponent} from './hireme/hireme.component';
 
 const routes: Routes = [
   {
@@ -26,7 +27,12 @@ const routes: Routes = [
       {
         path: 'aboutme',
         component: AboutMeComponent
+      },
+      {
+        path: 'hireme',
+        component: HireMeComponent
       }
+
 
     ]
 
