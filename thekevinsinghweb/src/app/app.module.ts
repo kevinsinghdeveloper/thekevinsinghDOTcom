@@ -10,6 +10,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {LoaderInterceptor} from './interceptors/spinner.interceptor';
 import {LoadingSpinnerService} from './global_services/loading-spinner.service';
 import {NgbToastModule} from '@ng-bootstrap/ng-bootstrap';
+import {SharedModule} from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {NgbToastModule} from '@ng-bootstrap/ng-bootstrap';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    SharedModule
 
 
   ],
