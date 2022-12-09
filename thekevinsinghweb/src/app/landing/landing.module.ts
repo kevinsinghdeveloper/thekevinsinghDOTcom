@@ -5,10 +5,14 @@ import { LandingRoutingModule } from './landing-routing.module';
 import { HomeComponent } from './home/home.component';
 import { SharedModule } from '../shared/shared.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {LandingComponent} from './landing.component';
+import {ProjectsComponent} from './projects/projects.component';
 
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent,
+    LandingComponent,
+    ProjectsComponent
   ],
   imports: [
     CommonModule,
