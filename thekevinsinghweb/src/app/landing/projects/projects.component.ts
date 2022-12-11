@@ -34,7 +34,6 @@ export class ProjectsComponent implements OnInit {
 
   ngOnInit(): void {
     this.jsonManagerService.getJSON("assets/json/projects.json").subscribe(data => {
-      console.log(data);
       this.projects = data;
     });
   }
