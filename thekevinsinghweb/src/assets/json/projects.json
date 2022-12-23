@@ -12,5 +12,13 @@
     "projectId": "DSFFEEFEF"
 
   }
+,
+  {
+    "name": "In-House",
+    "description": "Software",
+    "logoImageUrl": "assets/img/nature/image4.jpg",
+    "projectId": "ZSFFEEFEF"
+
+  }
 
 ]
