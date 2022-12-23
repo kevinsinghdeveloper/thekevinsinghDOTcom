@@ -20,7 +20,7 @@
 -->
         <div class="col-md-6 col-lg-4 unhide-hover" *ngFor="let project of projects; let i=index">
           <div class="card border-0">
-            <a><img class="card-img-top scale-on-hover" src={{project.logoImageUrl}} alt="Card Image"></a>
+            <a><img class="card-img-top scale-on-hover project-logo" src={{project.logoImageUrl}} alt="Card Image"></a>
             <div class="card-body">
               <h6>{{project.name}} - {{project.employmentType}} / {{project.projectType}}</h6>
               <p class="text-muted card-text">{{project.description}}</p>
