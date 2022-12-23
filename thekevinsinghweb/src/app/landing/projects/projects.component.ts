@@ -10,6 +10,8 @@ interface Project {
   name: String,
   description: String,
   logoImageUrl: String,
+  employmentType: string,
+  projectType: string,
   projectId: string
 
 };

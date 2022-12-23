@@ -3,12 +3,16 @@
     "name": "AnswerRocket",
     "description": "Data Analytics",
     "logoImageUrl": "assets/img/nature/image3.jpg",
+    "employmentType": "Full Time",
+    "projectType": "Employed",
     "projectId": "IDDDDDDD"
   },
   {
     "name": "Kroll",
     "description": "Business Services",
     "logoImageUrl": "assets/img/nature/image2.jpg",
+    "employmentType": "Full Time",
+    "projectType": "Employed",
     "projectId": "DSFFEEFEF"
 
   }
@@ -17,7 +21,19 @@
     "name": "In-House",
     "description": "Software",
     "logoImageUrl": "assets/img/nature/image4.jpg",
+    "employmentType": "Part Time",
+    "projectType": "Employed",
     "projectId": "ZSFFEEFEF"
+
+  }
+,
+  {
+    "name": "ZerveMe",
+    "description": "Software",
+    "logoImageUrl": "assets/img/nature/image5.jpg",
+    "employmentType": "Part Time",
+    "projectType": "Founder",
+    "projectId": "ZSFFEEFGG"
 
   }
 
