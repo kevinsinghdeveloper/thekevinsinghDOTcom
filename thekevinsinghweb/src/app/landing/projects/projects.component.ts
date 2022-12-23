@@ -12,6 +12,7 @@ interface Project {
   logoImageUrl: String,
   employmentType: string,
   projectType: string,
+  information: string,
   projectId: string
 
 };
@@ -19,7 +20,7 @@ interface Project {
 @Component({
   selector: 'projects',
   templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.scss']
+  styleUrls: ['./projects.component.css']
 })
 
 export class ProjectsComponent implements OnInit {

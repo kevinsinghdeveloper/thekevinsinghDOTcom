@@ -18,12 +18,13 @@
           </div>
         </div>
 -->
-        <div class="col-md-6 col-lg-4" *ngFor="let project of projects; let i=index">
-
-          <div class="card border-0"><a href="#"><img class="card-img-top scale-on-hover" src={{project.logoImageUrl}} alt="Card Image"></a>
+        <div class="col-md-6 col-lg-4 unhide-hover" *ngFor="let project of projects; let i=index">
+          <div class="card border-0">
+            <a><img class="card-img-top scale-on-hover" src={{project.logoImageUrl}} alt="Card Image"></a>
             <div class="card-body">
-              <h6><a href="#">{{project.name}} - {{project.employmentType}} / {{project.projectType}}</a></h6>
+              <h6>{{project.name}} - {{project.employmentType}} / {{project.projectType}}</h6>
               <p class="text-muted card-text">{{project.description}}</p>
+              <p class="text-muted card-text hover-desc">{{project.information}}</p>
             </div>
           </div>
 

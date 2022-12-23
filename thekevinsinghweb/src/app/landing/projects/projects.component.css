@@ -1,0 +1,6 @@
+.hover-desc{
+  display: none;
+}
+.unhide-hover:hover .hover-desc{
+  display: block;
+}

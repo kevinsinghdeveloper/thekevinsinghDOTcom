@@ -5,6 +5,7 @@
     "logoImageUrl": "assets/img/nature/image3.jpg",
     "employmentType": "Full Time",
     "projectType": "Employed",
+    "information": "Built and designed data models and ETLs for various client use cases",
     "projectId": "IDDDDDDD"
   },
   {
@@ -13,6 +14,7 @@
     "logoImageUrl": "assets/img/nature/image2.jpg",
     "employmentType": "Full Time",
     "projectType": "Employed",
+    "information": "Built and designed data models and ETLs for various client use cases",
     "projectId": "DSFFEEFEF"
 
   }
@@ -23,6 +25,7 @@
     "logoImageUrl": "assets/img/nature/image4.jpg",
     "employmentType": "Part Time",
     "projectType": "Employed",
+    "information": "Built and designed data models and ETLs for various client use cases",
     "projectId": "ZSFFEEFEF"
 
   }
@@ -33,6 +36,7 @@
     "logoImageUrl": "assets/img/nature/image5.jpg",
     "employmentType": "Part Time",
     "projectType": "Founder",
+    "information": "Built and designed data models and ETLs for various client use cases",
     "projectId": "ZSFFEEFGG"
 
   }
