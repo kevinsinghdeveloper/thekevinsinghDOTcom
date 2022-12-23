@@ -11,6 +11,7 @@ interface Project {
   description: String,
   logoImageUrl: String,
   projectId: string
+
 };
 
 @Component({

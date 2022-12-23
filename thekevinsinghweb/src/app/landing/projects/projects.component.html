@@ -7,6 +7,8 @@
     <div class="container">
       <div class="heading"></div>
       <div class="row">
+
+<!--
         <div class="col-md-6 col-lg-4">
           <div class="card border-0"><a href="#"><img class="card-img-top scale-on-hover" src="assets/img/nature/image1.jpg" alt="Card Image"></a>
             <div class="card-body">
@@ -15,6 +17,19 @@
             </div>
           </div>
         </div>
+-->
+        <div class="col-md-6 col-lg-4" *ngFor="let project of projects; let i=index">
+
+          <div class="card border-0"><a href="#"><img class="card-img-top scale-on-hover" src={{project.logoImageUrl}} alt="Card Image"></a>
+            <div class="card-body">
+              <h6><a href="#">{{project.name}}</a></h6>
+              <p class="text-muted card-text"></p>
+            </div>
+          </div>
+
+        </div>
+        <!--
+
         <div class="col-md-6 col-lg-4">
           <div class="card border-0"><a href="#"><img class="card-img-top scale-on-hover" src="assets/img/nature/image2.jpg" alt="Card Image"></a>
             <div class="card-body">
@@ -55,6 +70,7 @@
             </div>
           </div>
         </div>
+        -->
       </div>
     </div>
   </section>
