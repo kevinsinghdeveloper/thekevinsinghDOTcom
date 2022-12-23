@@ -5,6 +5,20 @@ import { AuthGService } from 'src/app/guard/auth-g.service';
 import { LandingService } from '../landing.service';
 import {ToastService} from '../../global_services/toast.service';
 
+interface Experience {
+  titleName: String,
+  organizationName: String,
+  description: String,
+  dateRange: string,
+  experienceType: string
+
+};
+interface Skill {
+  skillName: string,
+  proficencyLevel: number
+  skillType: string
+}
+
 @Component({
   selector: 'aboutme',
   templateUrl: './aboutme.component.html',
