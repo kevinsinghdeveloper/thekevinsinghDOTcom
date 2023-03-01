@@ -10,13 +10,17 @@ interface Project {
   name: String,
   description: String,
   logoImageUrl: String,
+  employmentType: string,
+  projectType: string,
+  information: string,
   projectId: string
+
 };
 
 @Component({
   selector: 'projects',
   templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.scss']
+  styleUrls: ['./projects.component.css']
 })
 
 export class ProjectsComponent implements OnInit {

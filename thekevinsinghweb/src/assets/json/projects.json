@@ -2,14 +2,42 @@
   {
     "name": "AnswerRocket",
     "description": "Data Analytics",
-    "logoImageUrl": "assets/img/nature/image3.jpg",
+    "logoImageUrl": "https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_91728a3c9f4bb94623834ffff818d134/answerrocket.jpg",
+    "employmentType": "Full Time",
+    "projectType": "Employed",
+    "information": "Built and designed data models and ETLs for various client use cases",
     "projectId": "IDDDDDDD"
   },
   {
     "name": "Kroll",
     "description": "Business Services",
-    "logoImageUrl": "assets/img/nature/image3.jpg",
+    "logoImageUrl": "data:image/png;base64,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",
+    "employmentType": "Full Time",
+    "projectType": "Employed",
+    "information": "Built and designed data models and ETLs for various client use cases",
     "projectId": "DSFFEEFEF"
+
+  }
+,
+  {
+    "name": "In-House",
+    "description": "Software",
+    "logoImageUrl": "https://lh4.googleusercontent.com/MMRCWeky5hD5fd0DnWfLGN0IddkyanFmNaQGEjYPd7lbiEKgA4oHmvts6fx8jHJVwd8oYRb0sS4Y--OU8Psqi1jk-efKcz0q2EdYV-_53z_e3ducefS7y7CcQCPabHQspI6YuP-ehyhM8uRzNIxJ",
+    "employmentType": "Part Time",
+    "projectType": "Employed",
+    "information": "Built and designed data models and ETLs for various client use cases",
+    "projectId": "ZSFFEEFEF"
+
+  }
+,
+  {
+    "name": "ZerveMe",
+    "description": "Software",
+    "logoImageUrl": "assets/img/company/zerveme.PNG",
+    "employmentType": "Part Time",
+    "projectType": "Founder",
+    "information": "Built and designed data models and ETLs for various client use cases",
+    "projectId": "ZSFFEEFGG"
 
   }
 

@@ -1,0 +1,13 @@
+.hover-desc{
+  display: none;
+}
+.unhide-hover:hover .hover-desc{
+  display: block;
+}
+.project-logo {
+  height: 250px;
+  width: 100%;
+  object-fit: contain;
+  padding: 15px;
+
+}
