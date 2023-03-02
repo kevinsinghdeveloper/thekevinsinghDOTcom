@@ -1,0 +1,173 @@
+
+  {
+    "Experience": [
+      {
+        "title": "Senior Data Engineer",
+        "company": "AnswerRocket",
+        "duration": "August 2021 to Present",
+        "description": [
+          {
+            "item": "Led the client integration process. Integrating client data into the Answer Rocket platform requires many Data Discovery meetings, ETL development, and understanding all cloud data warehouse environments."
+          },
+          {
+            "item": "Expertise on many popular cloud data warehouses (Redshift, Synapse, Big query, and Snowflake)"
+          },
+          {
+            "item": "Assisted with updating and improving our in house ETL Tool kit API using Python and SQL."
+          },
+          {
+            "item": "Build custom client connectors (ETL) to transform complex data models into something that could be interpreted with the Answer Rocket tool."
+          },
+          {
+            "item": "Building custom ETLs for special data science projects, which require fundamental understanding of data science concepts."
+          },
+          {
+            "item": "Assisted the core development team by developing Python and Kotlin code to improve core Answer Rocket functionality. "
+          },
+          {
+            "item": "Worked with Large datasets containing billions of rows for CPG (mostly Nielsen CPG data), Pharmaceutical, Legal industries. "
+          }
+        ]
+      },
+      {
+        "title": "Data Engineer II - Part Time",
+        "company": "In-House",
+        "duration": "October 2022 to Present",
+        "description": [
+          {
+            "item": "Setting up initial data infrastructure on GCP using Big Query as the data warehouse and AirByte as a convenient way to easily pipeline data."
+          },
+          {
+            "item": "Architect data models for various use cases outlined by the business leadership team."
+          },
+          {
+            "item": "Implemented data models using DBT and custom python ETL/ELTs."
+          },
+          {
+            "item":"Using the tool Metabase, I designed and implemented a dashboard containing insights requested by the business leadership team."
+          },
+          {
+            "item":"Mentored and managed new teammates."
+          }
+
+        ]
+      },
+      {
+        "title": "Back End - Part Time",
+        "company": "In-House",
+        "duration": "October 2022 to Present",
+        "description": [
+          {
+            "item": "Created and updated models using migrations with Entity Framework and C#."
+          },
+          {
+            "item": "Implemented unit tests to reduce errors and inconsistencies when implementing new code."
+          },
+          {
+            "item": "Worked on developing admin-based APIs that have helped the company transition away from ReTool."
+          },
+          {
+            "item":"Developed APIs using CRUD actions for our front end site."
+          }
+        ]
+      },
+      {
+        "title": "Data Engineer / Managing Consultant",
+        "company": "PrimeClerk LLC.",
+        "duration": "April 2015 to July 2021",
+        "description": [
+          {
+            "item": "Experienced in writing, debugging, and optimizing SQL queries."
+          },
+          {
+            "item": "Performed complex data analysis and provided critical time sensitive reports to support all departments."
+          },
+          {
+            "item": "Go-to person for developing ETL solutions for various databases that contain millions of rows of data each."
+          },
+          {
+            "item":"Developed various tools to automate and schedule processes using C# (.NET Core) and Python (NumPy / Pandas)."
+          },
+          {
+            "item":"Built over 80+ Excel macros using VBA and Power Query to handle ETL processes, reporting and auditing, and automate many processes."
+          },
+          {
+            "item":"Team lead in charge of creating processes and procedures for projects, importing large client data sets, developing complex tools, SOP (standard operating procedure) creation, and new hire training."
+          },
+          {
+            "item":"Experience creating Data Warehouses to analyze unique client data (AWS Redshift and SQL Server)"
+          }
+        ]
+      },
+      {
+        "title": "Full Stack Developer - Contract",
+        "company": "PayPal / IBM",
+        "duration": "November 2019 to January 2020",
+        "description": [
+          {
+            "item": "Adding new modules to project Kraken."
+          },
+          {
+            "item": "Worked with React hooks to create function-based frontend components."
+          }
+        ]
+      },
+      {
+        "title": "Software Developer – Contract",
+        "company": "PWC",
+        "duration": "December 2019 to January 2020",
+        "description": [
+          {
+            "item": "Worked on a project that extracted data from invoices, this assisted in helping automate the PWC billing system."
+          }
+        ]
+      },
+      {
+        "title": "Full Stack Developer Intern",
+        "company": "Oscuro.co",
+        "duration": "September 2014 to March 2015",
+        "description": [
+          {
+            "item": "Collaborated with web designers to implement and improve client websites."
+          },
+          {
+            "item": "Developed and improved over 20+ client websites."
+          },
+          {
+            "item": "Developed and maintained MYSQL stored procedures."
+          }
+        ]
+      }
+    ],
+    "Education": [
+      {
+        "degree": "Computer Science (B.A)",
+        "school": "Hunter College",
+        "duration": "2011-2015"
+      }
+    ],
+    "Skills": [
+      {
+        "language": "SQL",
+        "proficiency": 100
+      },
+      {
+        "language": "Python",
+        "proficiency": 100
+      },
+      {
+        "language": "C#",
+        "proficiency": 75
+      },
+      {
+        "language": "HTML",
+        "proficiency": 25
+      }
+    ],
+    "Contact": {
+      "name": "Kevin Singh",
+      "email": "kevinsingh.developer@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/kevin-singh-908547b4/"
+    }
+  }
+
