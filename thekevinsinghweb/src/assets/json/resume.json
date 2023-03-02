@@ -1,32 +1,47 @@
-[
+
   {
-    "Experience": {
-      "Data Engineer": {
-        "Company": "AnswerRocket",
-        "Duration": "07/2021-present",
-        "Description": "ETL development"
+    "Experience": [
+      {
+        "title": "Senior Data Engineer",
+        "company": "AnswerRocket",
+        "duration": "07/2021-present",
+        "description": "ETL development"
       },
-      "Data Engineer2": {
-        "Company": "AnswerRocket2",
-        "Duration": "07/2021-present2",
-        "Description": "ETL development2"
+      {
+        "title": "Data Engineer",
+        "company": "AnswerRocket2",
+        "duration": "07/2021-present2",
+        "description": "ETL development2"
       }
-    },
-    "Education": {
-      "Computer Science (B.A)": {
-        "School": "Hunter College",
-        "Duration": "2011-2015"
+    ],
+    "Education": [
+      {
+        "degree": "Computer Science (B.A)",
+        "school": "Hunter College",
+        "duration": "2011-2015"
       }
-    },
-    "Skills": {
-      "SQL": 100,
-      "Python": 100,
-      "C#": 75,
-      "HTML": 50
-    },
+    ],
+    "Skills": [
+      {
+        "language": "SQL",
+        "proficiency": 100
+      },
+      {
+        "language": "Python",
+        "proficiency": 100
+      },
+      {
+        "language": "C#",
+        "proficiency": 75
+      },
+      {
+        "language": "HTML",
+        "proficiency": 25
+      }
+    ],
     "Contact": {
-      "Name": "Kevin Singh",
-      "Email": "kevinsingh.developer@gmail.com"
+      "name": "Kevin Singh",
+      "email": "kevinsingh.developer@gmail.com"
     }
   }
-]
+

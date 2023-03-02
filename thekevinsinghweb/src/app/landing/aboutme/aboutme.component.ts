@@ -4,21 +4,40 @@ import { Router } from '@angular/router';
 import { AuthGService } from 'src/app/guard/auth-g.service';
 import { LandingService } from '../landing.service';
 import {ToastService} from '../../global_services/toast.service';
+import {JsonManagerService} from "../../global_services/json-manager.service";
 
-interface Experience {
-  titleName: String,
-  organizationName: String,
-  description: String,
-  dateRange: string,
-  experienceType: string
 
-};
-interface Skill {
-  skillName: string,
-  proficencyLevel: number
-  skillType: string
+interface Contact {
+  name: string,
+  email: string
+
 }
 
+interface Experience {
+  title: string,
+  company: string,
+  duration: string,
+  description: string
+
+}
+
+interface Education {
+  degree: string,
+  school: string,
+  duration: string
+}
+
+interface Skills {
+  language: string,
+  proficiency: string
+}
+
+interface Resume {
+  Contact: Contact,
+  Experience: Experience []
+  Education: Education []
+  Skills: Skills []
+};
 @Component({
   selector: 'aboutme',
   templateUrl: './aboutme.component.html',
@@ -26,17 +45,20 @@ interface Skill {
 })
 export class AboutMeComponent implements OnInit {
 
-
+  resume: Resume = null
   constructor(
       private formBuilder: FormBuilder,
       private router: Router,
       private fetch: LandingService,
       private auth: AuthGService,
-      private toastService: ToastService
+      private toastService: ToastService,
+      private jsonManagerService: JsonManagerService
   ) { }
 
   ngOnInit(): void {
-
+    this.jsonManagerService.getJSON("assets/json/resume.json").subscribe(data => {
+      this.resume = data;
+    });
   }
 
 }
