@@ -9,7 +9,8 @@ import {JsonManagerService} from "../../global_services/json-manager.service";
 
 interface Contact {
   name: string,
-  email: string
+  email: string,
+  linkedin: string
 
 }
 

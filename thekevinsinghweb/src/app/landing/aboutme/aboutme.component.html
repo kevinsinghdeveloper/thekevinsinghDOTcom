@@ -53,20 +53,16 @@
             <div class="contact-info portfolio-info-card">
               <h2>Contact Info</h2>
               <div class="row">
-                <div class="col-1"><i class="icon ion-android-calendar icon"></i></div>
-                <div class="col-9"><span>10/10/1990</span></div>
-              </div>
-              <div class="row">
                 <div class="col-1"><i class="icon ion-person icon"></i></div>
-                <div class="col-9"><span>John Smith</span></div>
-              </div>
-              <div class="row">
-                <div class="col-1"><i class="icon ion-ios-telephone icon"></i></div>
-                <div class="col-9"><span>+235 3217 424</span></div>
+                <div class="col-9"><span>{{resume.Contact.name}}</span></div>
               </div>
               <div class="row">
                 <div class="col-1"><i class="icon ion-at icon"></i></div>
-                <div class="col-9"><span>lorem@email.com</span></div>
+                <div class="col-9"><span>{{resume.Contact.email}}</span></div>
+              </div>
+              <div class="row">
+                <div class="col-1"><i class="icon ion-social-linkedin"></i></div>
+                <div class="col-9"><span><a href="{{resume.Contact.linkedin}}" target="_blank">LinkedIn</a></span></div>
               </div>
             </div>
           </div>
