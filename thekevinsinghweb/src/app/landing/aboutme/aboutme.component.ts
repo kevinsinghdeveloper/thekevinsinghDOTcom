@@ -14,11 +14,15 @@ interface Contact {
 
 }
 
+interface Description {
+  item: string
+}
+
 interface Experience {
   title: string,
   company: string,
   duration: string,
-  description: string
+  description: Description []
 
 }
 

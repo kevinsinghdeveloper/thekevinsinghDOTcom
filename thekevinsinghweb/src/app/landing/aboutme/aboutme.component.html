@@ -18,7 +18,7 @@
             </div>
             <div class="col-md-6"><span class="period">{{experience.duration}}</span></div>
           </div>
-          <p class="text-muted">{{experience.description}}</p>
+          <p class="text-muted" *ngFor="let description of experience.description; let i=index">{{description.item}}</p>
         </div>
       </div>
       <div class="education group">

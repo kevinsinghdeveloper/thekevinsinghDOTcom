@@ -4,14 +4,72 @@
       {
         "title": "Senior Data Engineer",
         "company": "AnswerRocket",
-        "duration": "07/2021-present",
-        "description": "ETL development"
+        "duration": "August 2021 to Present",
+        "description": [
+          {
+            "item": "Led the client integration process. Integrating client data into the Answer Rocket platform requires many Data Discovery meetings, ETL development, and understanding all cloud data warehouse environments."
+          },
+          {
+            "item": "Expertise on many popular cloud data warehouses (Redshift, Synapse, Big query, and Snowflake)"
+          },
+          {
+            "item": "Assisted with updating and improving our in house ETL Tool kit API using Python and SQL."
+          },
+          {
+            "item": "Build custom client connectors (ETL) to transform complex data models into something that could be interpreted with the Answer Rocket tool."
+          },
+          {
+            "item": "Building custom ETLs for special data science projects, which require fundamental understanding of data science concepts."
+          },
+          {
+            "item": "Assisted the core development team by developing Python and Kotlin code to improve core Answer Rocket functionality. "
+          },
+          {
+            "item": "Worked with Large datasets containing billions of rows for CPG (mostly Nielsen CPG data), Pharmaceutical, Legal industries. "
+          }
+        ]
       },
       {
-        "title": "Data Engineer",
-        "company": "AnswerRocket2",
-        "duration": "07/2021-present2",
-        "description": "ETL developsdfsdffdsfds sdfsdf ment2"
+        "title": "Data Engineer II - Part Time",
+        "company": "In-House",
+        "duration": "October 2022 to Present",
+        "description": [
+          {
+            "item": "Setting up initial data infrastructure on GCP using Big Query as the data warehouse and AirByte as a convenient way to easily pipeline data."
+          },
+          {
+            "item": "Architect data models for various use cases outlined by the business leadership team."
+          },
+          {
+            "item": "Implemented data models using DBT and custom python ETL/ELTs."
+          },
+          {
+            "item":"Using the tool Metabase, I designed and implemented a dashboard containing insights requested by the business leadership team."
+          },
+          {
+            "item":"Mentored and managed new teammates."
+          }
+
+        ]
+      },
+      {
+        "title": "Back End - Part Time",
+        "company": "In-House",
+        "duration": "October 2022 to Present",
+        "description": [
+          {
+            "item": "Created and updated models using migrations with Entity Framework and C#."
+          },
+          {
+            "item": "Implemented unit tests to reduce errors and inconsistencies when implementing new code."
+          },
+          {
+            "item": "Worked on developing admin-based APIs that have helped the company transition away from ReTool."
+          },
+          {
+            "item":"Developed APIs using CRUD actions for our front end site."
+          }
+        ]
       }
     ],
     "Education": [
