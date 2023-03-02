@@ -70,6 +70,73 @@
             "item":"Developed APIs using CRUD actions for our front end site."
           }
         ]
+      },
+      {
+        "title": "Data Engineer / Managing Consultant",
+        "company": "PrimeClerk LLC.",
+        "duration": "April 2015 to July 2021",
+        "description": [
+          {
+            "item": "Experienced in writing, debugging, and optimizing SQL queries."
+          },
+          {
+            "item": "Performed complex data analysis and provided critical time sensitive reports to support all departments."
+          },
+          {
+            "item": "Go-to person for developing ETL solutions for various databases that contain millions of rows of data each."
+          },
+          {
+            "item":"Developed various tools to automate and schedule processes using C# (.NET Core) and Python (NumPy / Pandas)."
+          },
+          {
+            "item":"Built over 80+ Excel macros using VBA and Power Query to handle ETL processes, reporting and auditing, and automate many processes."
+          },
+          {
+            "item":"Team lead in charge of creating processes and procedures for projects, importing large client data sets, developing complex tools, SOP (standard operating procedure) creation, and new hire training."
+          },
+          {
+            "item":"Experience creating Data Warehouses to analyze unique client data (AWS Redshift and SQL Server)"
+          }
+        ]
+      },
+      {
+        "title": "Full Stack Developer - Contract",
+        "company": "PayPal / IBM",
+        "duration": "November 2019 to January 2020",
+        "description": [
+          {
+            "item": "Adding new modules to project Kraken."
+          },
+          {
+            "item": "Worked with React hooks to create function-based frontend components."
+          }
+        ]
+      },
+      {
+        "title": "Software Developer – Contract",
+        "company": "PWC",
+        "duration": "December 2019 to January 2020",
+        "description": [
+          {
+            "item": "Worked on a project that extracted data from invoices, this assisted in helping automate the PWC billing system."
+          }
+        ]
+      },
+      {
+        "title": "Full Stack Developer Intern",
+        "company": "Oscuro.co",
+        "duration": "September 2014 to March 2015",
+        "description": [
+          {
+            "item": "Collaborated with web designers to implement and improve client websites."
+          },
+          {
+            "item": "Developed and improved over 20+ client websites."
+          },
+          {
+            "item": "Developed and maintained MYSQL stored procedures."
+          }
+        ]
       }
     ],
     "Education": [
