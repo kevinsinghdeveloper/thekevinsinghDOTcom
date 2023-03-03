@@ -48,6 +48,7 @@ export class HireMeComponent implements OnInit {
             autohide: true,
             headertext: ''
           });
+          form.reset();
         }
       )
     }
