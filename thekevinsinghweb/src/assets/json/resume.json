@@ -148,8 +148,40 @@
     ],
     "Skills": [
       {
-        "language": "SQL",
+        "language": "SQL Server",
         "proficiency": 100
+      },
+      {
+        "language": "PostgreSQL",
+        "proficiency": 100
+      },
+      {
+        "language": "MYSQL",
+        "proficiency": 75
+      },
+      {
+        "language": "SAP Hana",
+        "proficiency": 25
+      },
+      {
+        "language": "Redshift",
+        "proficiency": 100
+      },
+      {
+        "language": "Big Query",
+        "proficiency": 75
+      },
+      {
+        "language": "Azure Synapse",
+        "proficiency": 100
+      },
+      {
+        "language": "Snowflake",
+        "proficiency": 75
+      },
+      {
+        "language": "MongoDb",
+        "proficiency": 75
       },
       {
         "language": "Python",
@@ -157,18 +189,27 @@
       },
       {
         "language": "C#",
+        "proficiency": 100
+      },
+      {
+        "language": "Kotlin",
         "proficiency": 75
       },
       {
-        "language": "HTML",
-        "proficiency": 25
+        "language": "MongoDb",
+        "proficiency": 75
+      },
+      {
+        "language": "Angular",
+        "proficiency": 75
       }
+
     ],
     "Contact": {
       "name": "Kevin Singh",
       "email": "kevinsingh.developer@gmail.com",
       "linkedin": "https://www.linkedin.com/in/kevin-singh-908547b4/"
     },
-    "Summary": "I love to code and solve complex problem. Go to the Hire Me section to send me a message!"
+    "Summary": "Pandas, NumPy, Beautiful Soup, Pymssql, Psycopg2, Pyodbc, Azure SDK, Google (Cloud SDK), AWS SDK (Boto3), Dbt, SSRS, ASP.NET Core, MVC, Razor, Entity Framework, LINQ, Identity Framework, and ITextSharp.\nVisual Studio, Microsoft SQL Management Studio, Microsoft Report Builder, Azure Data Studio, Postman, Visual Code, XCode, NetBeans, Dreamweaver, Excel, Jupyter Notebook / Lab, PyCharm, intelliJ IDEA CE, Data Grip, Rider, Web Storm, Metabase, AirByte, FiveTran"
   }
 
