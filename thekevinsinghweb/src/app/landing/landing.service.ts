@@ -15,7 +15,9 @@ export class LandingService {
 
   constructor(
       private http: HttpClient,
-  ) {
-
+  ) {}
+  saveContactMessage(data: any) {
+    return this.http.post("https://thekevinsingh-default-rtdb.firebaseio.com/tickets.json",
+      data);
   }
 }

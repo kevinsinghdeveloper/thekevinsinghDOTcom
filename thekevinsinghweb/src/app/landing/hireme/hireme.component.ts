@@ -24,6 +24,7 @@ export class HireMeComponent implements OnInit {
       private auth: AuthGService,
       private toastService: ToastService,
       private http: HttpClient,
+      private landingService: LandingService
   ) {}
 
   ngOnInit(): void {
@@ -40,8 +41,7 @@ export class HireMeComponent implements OnInit {
       const email = form.value.email;
       const message = form.value.message;
 
-      this.http.post("https://thekevinsingh-default-rtdb.firebaseio.com/tickets.json",
-        form.value).subscribe(res => {
+      this.landingService.saveContactMessage(form.value).subscribe(res => {
           this.toastService.show($localize`Thank you for your message!`, {
             classname: 'bg-success text-light',
             delay: 4000 ,
