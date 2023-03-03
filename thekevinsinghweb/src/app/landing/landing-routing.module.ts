@@ -5,6 +5,7 @@ import {LandingComponent} from './landing.component';
 import {ProjectsComponent} from './projects/projects.component';
 import {AboutMeComponent} from './aboutme/aboutme.component';
 import {HireMeComponent} from './hireme/hireme.component';
+import {AdminComponent} from "./admin/admin.component";
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
       {
         path: 'hireme',
         component: HireMeComponent
+      },
+      {
+        path: 'admin',
+        component: AdminComponent
       }
 
 

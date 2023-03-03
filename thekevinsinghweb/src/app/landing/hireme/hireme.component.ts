@@ -16,7 +16,6 @@ import { $localize } from '@angular/localize/init'; // import $localize
 export class HireMeComponent implements OnInit {
   ticketForm: FormGroup;
   ticket: {};
-
   constructor(
       private formBuilder: FormBuilder,
       private router: Router,
@@ -33,6 +32,11 @@ export class HireMeComponent implements OnInit {
       email: ['', [Validators.required, Validators.email]],
       message: ['', Validators.required]
     });
+    /*
+    this.landingService.getContactMessages().subscribe(res => {
+      let data: any = res;
+    } );
+     */
   }
   onSubmit(form: NgForm) {
 

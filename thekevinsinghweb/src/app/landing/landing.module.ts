@@ -9,6 +9,7 @@ import {LandingComponent} from './landing.component';
 import {ProjectsComponent} from './projects/projects.component';
 import {AboutMeComponent} from './aboutme/aboutme.component';
 import {HireMeComponent} from './hireme/hireme.component';
+import {AdminComponent} from "./admin/admin.component";
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {HireMeComponent} from './hireme/hireme.component';
     LandingComponent,
     ProjectsComponent,
     AboutMeComponent,
-    HireMeComponent
+    HireMeComponent,
+    AdminComponent
   ],
   imports: [
     CommonModule,
