@@ -6,21 +6,37 @@
     <div class="container">
       <div class="heading"></div>
       <form #ticketForm="ngForm" (ngSubmit)="onSubmit(ticketForm)">
-          <div class="mb-3">
-            <label class="form-label" for="name">Name</label><input type="email" class="form-control" id="name" name="name" ngModel required>
-          </div>
         <div class="mb-3">
-          <label class="form-label" for="email">Email</label><input type="email" class="form-control" id="email" name="email" ngModel required>
+          <label class="form-label" for="name">Name</label>
+          <input type="text" class="form-control" id="name" name="name" [(ngModel)]="ticketForm.name" required>
+          <div *ngIf="ticketForm.submitted && ticketForm.controls.name.errors" class="text-danger">
+            Name is required.
+          </div>
         </div>
         <div class="mb-3">
-          <label class="form-label" for="message">Message</label><textarea class="form-control" id="message" name="message" ngModel required></textarea>
+          <label class="form-label" for="email">Email</label>
+          <input type="email" class="form-control" id="email" name="email" [(ngModel)]="ticketForm.email" email required>
+          <div *ngIf="ticketForm.submitted && ticketForm.controls.email.errors" class="text-danger">
+            Email is required and must be a valid email address.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="message">Message</label>
+          <textarea class="form-control" id="message" name="message" [(ngModel)]="ticketForm.message" required></textarea>
+          <div *ngIf="ticketForm.submitted && ticketForm.controls.message.errors" class="text-danger">
+            Message is required.
+          </div>
         </div>
         <div class="mb-3">
           <div class="row">
-            <div class="col-md-6 col-xl-12 button"><button class="btn btn-primary d-block w-100" type="submit">Hire Me</button></div>
+            <div class="col-md-6 col-xl-12 button">
+              <button class="btn btn-primary d-block w-100" type="submit">Hire Me</button>
+            </div>
           </div>
         </div>
       </form>
+
+
 
     </div>
   </section>

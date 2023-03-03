@@ -14,6 +14,8 @@ import {SharedModule} from './shared/shared.module';
 import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from '../environments/environment';
 import {AngularFirestoreModule} from "@angular/fire/compat/firestore";
+import {CommonModule} from "@angular/common";
+import {ToastService} from "./global_services/toast.service";
 
 @NgModule({
   declarations: [
@@ -23,6 +25,7 @@ import {AngularFirestoreModule} from "@angular/fire/compat/firestore";
 
   ],
   imports: [
+    CommonModule,
     NgbToastModule,
     BrowserModule,
     AppRoutingModule,
@@ -34,11 +37,12 @@ import {AngularFirestoreModule} from "@angular/fire/compat/firestore";
   ],
   providers: [
     LoadingSpinnerService,
-    { provide: HTTP_INTERCEPTORS, useClass: LoaderInterceptor, multi: true }
+    { provide: HTTP_INTERCEPTORS, useClass: LoaderInterceptor, multi: true },
+    ToastService
 
   ],
   exports: [
-
+    ToastComponent
   ],
   bootstrap: [AppComponent]
 })
