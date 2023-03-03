@@ -10,7 +10,9 @@ import { $localize } from '@angular/localize/init'; // import $localize
 interface Ticket {
   name: string,
   email: string,
-  message: string
+  message: string,
+
+  currentDate: string
 }
 
 @Component({

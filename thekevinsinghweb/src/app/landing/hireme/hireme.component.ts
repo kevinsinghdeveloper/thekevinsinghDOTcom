@@ -44,8 +44,12 @@ export class HireMeComponent implements OnInit {
       const name = form.value.name;
       const email = form.value.email;
       const message = form.value.message;
+      const currentDate = new Date().toISOString(); // Get the current date and time in ISO string format
 
-      this.landingService.saveContactMessage(form.value).subscribe(res => {
+      // Add the currentDate to the form value
+      const formValue = {...form.value, currentDate};
+
+      this.landingService.saveContactMessage(formValue).subscribe(res => {
           this.toastService.show($localize`Thank you for your message!`, {
             classname: 'bg-success text-light',
             delay: 4000 ,
