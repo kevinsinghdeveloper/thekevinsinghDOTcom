@@ -5,6 +5,7 @@ import { AuthGService } from 'src/app/guard/auth-g.service';
 import { LandingService } from '../landing.service';
 import {ToastService} from '../../global_services/toast.service';
 import {HttpClient, HttpHeaders} from "@angular/common/http";
+import { $localize } from '@angular/localize/init'; // import $localize
 
 
 @Component({
@@ -41,9 +42,23 @@ export class HireMeComponent implements OnInit {
 
       this.http.post("https://thekevinsingh-default-rtdb.firebaseio.com/tickets.json",
         form.value).subscribe(res => {
-
+          this.toastService.show($localize`Thank you for your message!`, {
+            classname: 'bg-success text-light',
+            delay: 4000 ,
+            autohide: true,
+            headertext: ''
+          });
         }
       )
+    }
+    else {
+      this.toastService.show($localize`Invalid entry!`, {
+        classname: 'bg-danger text-light',
+        delay: 4000 ,
+        autohide: true,
+        headertext: ''
+      });
+
     }
   }
 }
