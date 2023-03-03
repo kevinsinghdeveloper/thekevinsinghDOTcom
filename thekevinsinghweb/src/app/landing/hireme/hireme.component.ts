@@ -5,12 +5,16 @@ import { AuthGService } from 'src/app/guard/auth-g.service';
 import { LandingService } from '../landing.service';
 import {ToastService} from '../../global_services/toast.service';
 import {HttpClient, HttpHeaders} from "@angular/common/http";
+
+
 @Component({
   selector: 'hireme',
   templateUrl: './hireme.component.html',
   styleUrls: ['./hireme.component.scss']
 })
 export class HireMeComponent implements OnInit {
+  ticketForm: FormGroup;
+  ticket: {};
 
   constructor(
       private formBuilder: FormBuilder,
@@ -22,14 +26,24 @@ export class HireMeComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-
+    this.ticketForm = this.formBuilder.group({
+      name: ['', Validators.required],
+      email: ['', [Validators.required, Validators.email]],
+      message: ['', Validators.required]
+    });
   }
   onSubmit(form: NgForm) {
-    this.http.post("https://thekevinsingh-default-rtdb.firebaseio.com/tickets.json",
-      form.value).subscribe((response) => console.log(response))
+
+    if (form.valid) {
+      const name = form.value.name;
+      const email = form.value.email;
+      const message = form.value.message;
+
+      this.http.post("https://thekevinsingh-default-rtdb.firebaseio.com/tickets.json",
+        form.value).subscribe(res => {
+
+        }
+      )
+    }
   }
-
-
-
-
 }
