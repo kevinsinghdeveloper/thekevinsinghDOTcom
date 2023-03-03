@@ -5,22 +5,23 @@
     </div>
     <div class="container">
       <div class="heading"></div>
-      <form>
-        <div class="mb-3"><label class="form-label" for="subject">Subject</label><select class="form-select" id="subject">
-          <optgroup label="This is a group">
-            <option value="12" selected="">This is item 1</option>
-            <option value="13">This is item 2</option>
-            <option value="14">This is item 3</option>
-          </optgroup>
-        </select></div>
-        <div class="mb-3"><label class="form-label" for="email">Email</label><input class="form-control" type="email" id="email"></div>
-        <div class="mb-3"><label class="form-label" for="message">Message</label><textarea class="form-control" id="message"></textarea></div>
+      <form #ticketForm="ngForm" (ngSubmit)="onSubmit(ticketForm)">
+          <div class="mb-3">
+            <label class="form-label" for="name">Name</label><input type="email" class="form-control" id="name" name="name" ngModel required>
+          </div>
+        <div class="mb-3">
+          <label class="form-label" for="email">Email</label><input type="email" class="form-control" id="email" name="email" ngModel required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="message">Message</label><textarea class="form-control" id="message" name="message" ngModel required></textarea>
+        </div>
         <div class="mb-3">
           <div class="row">
             <div class="col-md-6 col-xl-12 button"><button class="btn btn-primary d-block w-100" type="submit">Hire Me</button></div>
           </div>
         </div>
       </form>
+
     </div>
   </section>
 </main>

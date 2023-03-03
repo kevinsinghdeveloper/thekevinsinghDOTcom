@@ -40,7 +40,7 @@
         <div class="row">
           <div class="col-md-6">
             <div class="skills portfolio-info-card">
-              <h2>Skills</h2>
+              <h2>Languages</h2>
               <div *ngFor="let skill of resume.Skills; let i=index">
                 <h3>{{skill.language}}</h3>
                 <div class="progress">
@@ -70,9 +70,9 @@
       </div>
       <div class="hobbies group">
         <div class="heading">
-          <h2 class="text-center">Hobbies</h2>
+          <h2 class="text-center">Technologies</h2>
         </div>
-        <p class="text-center text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras risus ligula, iaculis ut metus sit amet, luctus pharetra mauris. Aliquam purus felis, pretium vel pretium vitae, dapibus sodales ante. Suspendisse potenti. Duis nunc eros.</p>
+        <p class="text-center text-muted">{{resume.Summary}}</p>
       </div>
     </div>
   </section>

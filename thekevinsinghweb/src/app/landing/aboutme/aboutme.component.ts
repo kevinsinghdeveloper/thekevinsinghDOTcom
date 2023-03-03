@@ -42,6 +42,7 @@ interface Resume {
   Experience: Experience []
   Education: Education []
   Skills: Skills []
+  Summary: string
 };
 @Component({
   selector: 'aboutme',
