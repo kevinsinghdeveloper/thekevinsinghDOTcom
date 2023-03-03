@@ -5,15 +5,6 @@ import { AuthGService } from 'src/app/guard/auth-g.service';
 import { LandingService } from '../landing.service';
 import {ToastService} from '../../global_services/toast.service';
 import {HttpClient, HttpHeaders} from "@angular/common/http";
-
-
-
-interface Ticket {
-  name: string;
-  email: string;
-  message: string;
-}
-
 @Component({
   selector: 'hireme',
   templateUrl: './hireme.component.html',
@@ -21,24 +12,23 @@ interface Ticket {
 })
 export class HireMeComponent implements OnInit {
 
-  contactForm: FormGroup;
-
   constructor(
       private formBuilder: FormBuilder,
       private router: Router,
       private fetch: LandingService,
       private auth: AuthGService,
       private toastService: ToastService,
-      private http: HttpClient
-  ) { }
+      private http: HttpClient,
+  ) {}
 
   ngOnInit(): void {
-    this.contactForm = this.formBuilder.group({
-      name: ['', Validators.required],
-      email: ['', [Validators.required, Validators.email]],
-      message: ['', Validators.required]
-    });
+
   }
+  onSubmit(form: NgForm) {
+    this.http.post("https://thekevinsingh-default-rtdb.firebaseio.com/tickets.json",
+      form.value).subscribe((response) => console.log(response))
+  }
+
 
 
 
