@@ -1,43 +1,90 @@
 <main class="page hire-me-page">
-  <section class="portfolio-block hire-me">
-    <div style="text-align:center;">
-      <h2 class="divider-style"><span>Hire Me</span></h2>
-    </div>
+  <section class="portfolio-block hire-me py-5">
     <div class="container">
-      <div class="heading"></div>
-      <form #ticketForm="ngForm" (ngSubmit)="onSubmit(ticketForm)">
-        <div class="mb-3">
-          <label class="form-label" for="name">Name</label>
-          <input type="text" class="form-control" id="name" name="name" [(ngModel)]="ticketForm.name" required>
-          <div *ngIf="ticketForm.submitted && ticketForm.controls.name.errors" class="text-danger">
-            Name is required.
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold mb-3">Let's Work Together</h2>
+            <p class="lead text-muted">Have a project in mind or want to discuss data engineering opportunities? I'd love to hear from you!</p>
           </div>
-        </div>
-        <div class="mb-3">
-          <label class="form-label" for="email">Email</label>
-          <input type="email" class="form-control" id="email" name="email" [(ngModel)]="ticketForm.email" email required>
-          <div *ngIf="ticketForm.submitted && ticketForm.controls.email.errors" class="text-danger">
-            Email is required and must be a valid email address.
-          </div>
-        </div>
-        <div class="mb-3">
-          <label class="form-label" for="message">Message</label>
-          <textarea class="form-control" id="message" name="message" [(ngModel)]="ticketForm.message" required></textarea>
-          <div *ngIf="ticketForm.submitted && ticketForm.controls.message.errors" class="text-danger">
-            Message is required.
-          </div>
-        </div>
-        <div class="mb-3">
-          <div class="row">
-            <div class="col-md-6 col-xl-12 button">
-              <button class="btn btn-primary d-block w-100" type="submit">Hire Me</button>
+
+          <div class="card shadow-lg border-0">
+            <div class="card-body p-4 p-md-5">
+              <form #ticketForm="ngForm" (ngSubmit)="onSubmit(ticketForm)">
+                <div class="mb-4">
+                  <label class="form-label fw-semibold" for="name">
+                    <i class="fas fa-user me-2 text-primary"></i>Your Name
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control form-control-lg"
+                    id="name"
+                    name="name"
+                    [(ngModel)]="ticketForm.name"
+                    placeholder="John Doe"
+                    required>
+                  <div *ngIf="ticketForm.submitted && ticketForm.controls.name?.errors" class="text-danger small mt-1">
+                    <i class="fas fa-exclamation-circle me-1"></i>Name is required.
+                  </div>
+                </div>
+
+                <div class="mb-4">
+                  <label class="form-label fw-semibold" for="email">
+                    <i class="fas fa-envelope me-2 text-primary"></i>Email Address
+                  </label>
+                  <input
+                    type="email"
+                    class="form-control form-control-lg"
+                    id="email"
+                    name="email"
+                    [(ngModel)]="ticketForm.email"
+                    placeholder="john@example.com"
+                    email
+                    required>
+                  <div *ngIf="ticketForm.submitted && ticketForm.controls.email?.errors" class="text-danger small mt-1">
+                    <i class="fas fa-exclamation-circle me-1"></i>Please enter a valid email address.
+                  </div>
+                </div>
+
+                <div class="mb-4">
+                  <label class="form-label fw-semibold" for="message">
+                    <i class="fas fa-comment-dots me-2 text-primary"></i>Message
+                  </label>
+                  <textarea
+                    class="form-control form-control-lg"
+                    id="message"
+                    name="message"
+                    [(ngModel)]="ticketForm.message"
+                    rows="6"
+                    placeholder="Tell me about your project or opportunity..."
+                    required></textarea>
+                  <div *ngIf="ticketForm.submitted && ticketForm.controls.message?.errors" class="text-danger small mt-1">
+                    <i class="fas fa-exclamation-circle me-1"></i>Please enter your message.
+                  </div>
+                </div>
+
+                <div class="d-grid">
+                  <button class="btn btn-primary btn-lg py-3" type="submit">
+                    <i class="fas fa-paper-plane me-2"></i>Send Message
+                  </button>
+                </div>
+              </form>
+
+              <div class="mt-5 pt-4 border-top text-center">
+                <h6 class="fw-semibold mb-3">Other Ways to Connect</h6>
+                <div class="d-flex justify-content-center gap-3">
+                  <a href="https://www.linkedin.com/in/kevin-singh-908547b4/" target="_blank" class="btn btn-outline-primary">
+                    <i class="fab fa-linkedin me-2"></i>LinkedIn
+                  </a>
+                  <a href="https://github.com/kevinsinghdeveloper" target="_blank" class="btn btn-outline-dark">
+                    <i class="fab fa-github me-2"></i>GitHub
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </form>
-
-
-
+      </div>
     </div>
   </section>
 </main>

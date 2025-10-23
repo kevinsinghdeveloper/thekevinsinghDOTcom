@@ -1,3 +1,60 @@
+/* Modern Data Engineer Theme */
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.object-fit-contain {
+  object-fit: contain;
+}
+
+/* Badge styling */
+.badge {
+  font-weight: 500;
+  padding: 0.4rem 0.8rem;
+}
+
+/* Card enhancements */
+.card {
+  transition: all 0.3s ease;
+}
+
+.shadow-lg {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+/* GitHub card specific */
+.card-header {
+  border-bottom: none;
+}
+
+/* Tech stack badges */
+.badge.bg-dark {
+  background-color: #2d3748 !important;
+}
+
+.badge.bg-secondary {
+  background-color: #718096 !important;
+}
+
 .hover-desc{
   display: none;
 }
@@ -9,5 +66,15 @@
   width: 100%;
   object-fit: contain;
   padding: 15px;
+}
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2rem;
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
 }

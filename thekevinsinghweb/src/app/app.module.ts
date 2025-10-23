@@ -11,9 +11,6 @@ import {LoaderInterceptor} from './interceptors/spinner.interceptor';
 import {LoadingSpinnerService} from './global_services/loading-spinner.service';
 import {NgbToastModule} from '@ng-bootstrap/ng-bootstrap';
 import {SharedModule} from './shared/shared.module';
-import { AngularFireModule } from '@angular/fire/compat';
-import { environment } from '../environments/environment';
-import {AngularFirestoreModule} from "@angular/fire/compat/firestore";
 import {CommonModule} from "@angular/common";
 import {ToastService} from "./global_services/toast.service";
 
@@ -31,9 +28,7 @@ import {ToastService} from "./global_services/toast.service";
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    SharedModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFirestoreModule
+    SharedModule
   ],
   providers: [
     LoadingSpinnerService,

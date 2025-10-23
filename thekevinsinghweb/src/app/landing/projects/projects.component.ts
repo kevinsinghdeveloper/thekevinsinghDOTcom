@@ -14,8 +14,27 @@ interface Project {
   projectType: string,
   information: string,
   projectId: string
+}
 
-};
+interface Repository {
+  name: string,
+  description: string,
+  githubUrl: string,
+  techStack: string[],
+  highlights: string[]
+}
+
+interface GitHubProject {
+  projectName: string,
+  description: string,
+  category: string,
+  githubUrl: string,
+  technologies: string[],
+  repositories: Repository[],
+  projectType: string,
+  status: string,
+  year: string
+}
 
 @Component({
   selector: 'projects',
@@ -25,7 +44,8 @@ interface Project {
 
 export class ProjectsComponent implements OnInit {
 
-  projects: Project [] = [];
+  projects: Project[] = [];
+  githubProjects: GitHubProject[] = [];
 
   constructor(
       private formBuilder: FormBuilder,
@@ -39,6 +59,10 @@ export class ProjectsComponent implements OnInit {
   ngOnInit(): void {
     this.jsonManagerService.getJSON("assets/json/projects.json").subscribe(data => {
       this.projects = data;
+    });
+
+    this.jsonManagerService.getJSON("assets/json/github-projects.json").subscribe(data => {
+      this.githubProjects = data;
     });
   }
 }

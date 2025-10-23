@@ -36,11 +36,16 @@ export class AdminComponent implements OnInit {
   ngOnInit(): void {
     this.landingService.getContactMessages().subscribe(res => {
         let data: any = res;
-        for (let key in data) {
-          let value = data[key];
-          let ticketVal: Ticket = value;
-          this.tickets.push(ticketVal);
-      }
+        if (Array.isArray(data)) {
+          this.tickets = data;
+        } else {
+          // Handle object format (in case backend returns an object)
+          for (let key in data) {
+            let value = data[key];
+            let ticketVal: Ticket = value;
+            this.tickets.push(ticketVal);
+          }
+        }
     });
 
   }

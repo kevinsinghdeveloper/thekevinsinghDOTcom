@@ -9,9 +9,13 @@ import {JsonManagerService} from "../../global_services/json-manager.service";
 
 interface Contact {
   name: string,
+  title: string,
   email: string,
-  linkedin: string
-
+  phone: string,
+  address: string,
+  linkedin: string,
+  github: string,
+  website: string
 }
 
 interface Description {
@@ -22,8 +26,7 @@ interface Experience {
   title: string,
   company: string,
   duration: string,
-  description: Description []
-
+  description: Description[]
 }
 
 interface Education {
@@ -32,18 +35,18 @@ interface Education {
   duration: string
 }
 
-interface Skills {
-  language: string,
-  proficiency: string
+interface SkillCategory {
+  category: string,
+  technologies: string[]
 }
 
 interface Resume {
   Contact: Contact,
-  Experience: Experience []
-  Education: Education []
-  Skills: Skills []
+  Experience: Experience[],
+  Education: Education[],
+  Skills: SkillCategory[],
   Summary: string
-};
+}
 @Component({
   selector: 'aboutme',
   templateUrl: './aboutme.component.html',

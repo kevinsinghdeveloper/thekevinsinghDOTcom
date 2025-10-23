@@ -17,10 +17,10 @@ export class LandingService {
       private http: HttpClient,
   ) {}
   saveContactMessage(data: any) {
-    return this.http.post("https://thekevinsingh-default-rtdb.firebaseio.com/tickets.json",
+    return this.http.post(`${environment.host}api/contact`,
       data);
   }
   getContactMessages(){
-    return this.http.get("https://thekevinsingh-default-rtdb.firebaseio.com/tickets.json");
+    return this.http.get(`${environment.host}api/contact`);
   }
 }

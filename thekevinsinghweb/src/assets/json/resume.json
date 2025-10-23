@@ -1,215 +1,170 @@
-
-  {
-    "Experience": [
-      {
-        "title": "Senior Data Engineer",
-        "company": "AnswerRocket",
-        "duration": "August 2021 to Present",
-        "description": [
-          {
-            "item": "Led the client integration process. Integrating client data into the Answer Rocket platform requires many Data Discovery meetings, ETL development, and understanding all cloud data warehouse environments."
-          },
-          {
-            "item": "Expertise on many popular cloud data warehouses (Redshift, Synapse, Big query, and Snowflake)"
-          },
-          {
-            "item": "Assisted with updating and improving our in house ETL Tool kit API using Python and SQL."
-          },
-          {
-            "item": "Build custom client connectors (ETL) to transform complex data models into something that could be interpreted with the Answer Rocket tool."
-          },
-          {
-            "item": "Building custom ETLs for special data science projects, which require fundamental understanding of data science concepts."
-          },
-          {
-            "item": "Assisted the core development team by developing Python and Kotlin code to improve core Answer Rocket functionality. "
-          },
-          {
-            "item": "Worked with Large datasets containing billions of rows for CPG (mostly Nielsen CPG data), Pharmaceutical, Legal industries. "
-          }
-        ]
-      },
-      {
-        "title": "Data Engineer II - Part Time",
-        "company": "In-House",
-        "duration": "October 2022 to Present",
-        "description": [
-          {
-            "item": "Setting up initial data infrastructure on GCP using Big Query as the data warehouse and AirByte as a convenient way to easily pipeline data."
-          },
-          {
-            "item": "Architect data models for various use cases outlined by the business leadership team."
-          },
-          {
-            "item": "Implemented data models using DBT and custom python ETL/ELTs."
-          },
-          {
-            "item":"Using the tool Metabase, I designed and implemented a dashboard containing insights requested by the business leadership team."
-          },
-          {
-            "item":"Mentored and managed new teammates."
-          }
-
-        ]
-      },
-      {
-        "title": "Back End - Part Time",
-        "company": "In-House",
-        "duration": "October 2022 to Present",
-        "description": [
-          {
-            "item": "Created and updated models using migrations with Entity Framework and C#."
-          },
-          {
-            "item": "Implemented unit tests to reduce errors and inconsistencies when implementing new code."
-          },
-          {
-            "item": "Worked on developing admin-based APIs that have helped the company transition away from ReTool."
-          },
-          {
-            "item":"Developed APIs using CRUD actions for our front end site."
-          }
-        ]
-      },
-      {
-        "title": "Data Engineer / Managing Consultant",
-        "company": "PrimeClerk LLC.",
-        "duration": "April 2015 to July 2021",
-        "description": [
-          {
-            "item": "Experienced in writing, debugging, and optimizing SQL queries."
-          },
-          {
-            "item": "Performed complex data analysis and provided critical time sensitive reports to support all departments."
-          },
-          {
-            "item": "Go-to person for developing ETL solutions for various databases that contain millions of rows of data each."
-          },
-          {
-            "item":"Developed various tools to automate and schedule processes using C# (.NET Core) and Python (NumPy / Pandas)."
-          },
-          {
-            "item":"Built over 80+ Excel macros using VBA and Power Query to handle ETL processes, reporting and auditing, and automate many processes."
-          },
-          {
-            "item":"Team lead in charge of creating processes and procedures for projects, importing large client data sets, developing complex tools, SOP (standard operating procedure) creation, and new hire training."
-          },
-          {
-            "item":"Experience creating Data Warehouses to analyze unique client data (AWS Redshift and SQL Server)"
-          }
-        ]
-      },
-      {
-        "title": "Full Stack Developer - Contract",
-        "company": "PayPal / IBM",
-        "duration": "November 2019 to January 2020",
-        "description": [
-          {
-            "item": "Adding new modules to project Kraken."
-          },
-          {
-            "item": "Worked with React hooks to create function-based frontend components."
-          }
-        ]
-      },
-      {
-        "title": "Software Developer – Contract",
-        "company": "PWC",
-        "duration": "December 2019 to January 2020",
-        "description": [
-          {
-            "item": "Worked on a project that extracted data from invoices, this assisted in helping automate the PWC billing system."
-          }
-        ]
-      },
-      {
-        "title": "Full Stack Developer Intern",
-        "company": "Oscuro.co",
-        "duration": "September 2014 to March 2015",
-        "description": [
-          {
-            "item": "Collaborated with web designers to implement and improve client websites."
-          },
-          {
-            "item": "Developed and improved over 20+ client websites."
-          },
-          {
-            "item": "Developed and maintained MYSQL stored procedures."
-          }
-        ]
-      }
-    ],
-    "Education": [
-      {
-        "degree": "Computer Science (B.A)",
-        "school": "Hunter College",
-        "duration": "2011-2015"
-      }
-    ],
-    "Skills": [
-      {
-        "language": "SQL Server",
-        "proficiency": 100
-      },
-      {
-        "language": "PostgreSQL",
-        "proficiency": 100
-      },
-      {
-        "language": "MYSQL",
-        "proficiency": 75
-      },
-      {
-        "language": "SAP Hana",
-        "proficiency": 25
-      },
-      {
-        "language": "Redshift",
-        "proficiency": 100
-      },
-      {
-        "language": "Big Query",
-        "proficiency": 75
-      },
-      {
-        "language": "Azure Synapse",
-        "proficiency": 100
-      },
-      {
-        "language": "Snowflake",
-        "proficiency": 75
-      },
-      {
-        "language": "MongoDb",
-        "proficiency": 75
-      },
-      {
-        "language": "Python",
-        "proficiency": 100
-      },
-      {
-        "language": "C#",
-        "proficiency": 100
-      },
-      {
-        "language": "Kotlin",
-        "proficiency": 75
-      },
-      {
-        "language": "MongoDb",
-        "proficiency": 75
-      },
-      {
-        "language": "Angular",
-        "proficiency": 75
-      }
-
-    ],
-    "Contact": {
-      "name": "Kevin Singh",
-      "email": "kevinsingh.developer@gmail.com",
-      "linkedin": "https://www.linkedin.com/in/kevin-singh-908547b4/"
+{
+  "Experience": [
+    {
+      "title": "Senior Data Engineer (AI Focused / AI Data Content Team)",
+      "company": "AnswerRocket LLC",
+      "duration": "August 2021 - Present",
+      "description": [
+        {
+          "item": "Spearheaded the client integration process, orchestrating seamless integration of client data into the Answer Rocket platform. This involved conducting Data Discovery meetings, designing, and implementing ETL solutions, and navigating various cloud data warehouses."
+        },
+        {
+          "item": "Demonstrated prowess across a spectrum of leading cloud data warehouses including Redshift, Synapse, Big Query, and Snowflake."
+        },
+        {
+          "item": "Revamped in-house ETL Toolkit API using Python and SQL, introducing new features that streamline data transformation, extraction, and loading (ETL/ELT) tasks. Significantly expanded capabilities to seamlessly process data from S3, Azure Blob, and Google Cloud Storage."
+        },
+        {
+          "item": "Drove impactful outcomes while working with substantial datasets encompassing billions of rows, primarily within the CPG realm (with a focus on Nielsen CPG data), as well as the Pharmaceutical and Legal sectors."
+        },
+        {
+          "item": "Designed and implemented data pipelines for diverse datasets, applying specialized data modeling techniques and selecting the most optimal tools to ensure efficiency and scalability."
+        },
+        {
+          "item": "Utilized cutting-edge AI technologies to enhance and optimize existing data pipeline toolsets."
+        }
+      ]
     },
-    "Summary": "Pandas, NumPy, Beautiful Soup, Pymssql, Psycopg2, Pyodbc, Azure SDK, Google (Cloud SDK), AWS SDK (Boto3), Dbt, SSRS, ASP.NET Core, MVC, Razor, Entity Framework, LINQ, Identity Framework, and ITextSharp.\nVisual Studio, Microsoft SQL Management Studio, Microsoft Report Builder, Azure Data Studio, Postman, Visual Code, XCode, NetBeans, Dreamweaver, Excel, Jupyter Notebook / Lab, PyCharm, intelliJ IDEA CE, Data Grip, Rider, Web Storm, Metabase, AirByte, FiveTran"
-  }
-
+    {
+      "title": "Lead Data Engineer - Part Time (Shop Automation Team)",
+      "company": "SwipeSwipe LLC",
+      "duration": "May 2024 - March 2025",
+      "description": [
+        {
+          "item": "Founding lead data engineer, responsible for building the initial infrastructure and architecture."
+        },
+        {
+          "item": "Led a team of 5 data engineers, delegating tasks and overseeing project development."
+        },
+        {
+          "item": "Developed the starting infrastructure and architecture, leveraging cutting-edge GenAI technologies (Gemini AI API, OpenAI API, and Claude AI API)."
+        },
+        {
+          "item": "Decomposed a custom-built abstract data pipeline into smaller sub-components to enhance team collaboration and efficiency."
+        },
+        {
+          "item": "Conducted extensive R&D to identify the best technologies for automating data extraction for the extensions team."
+        },
+        {
+          "item": "Implemented Spark into our abstract data pipeline which was so modular we were able to leverage Airflow, which will allow us to scale up and down at will."
+        },
+        {
+          "item": "Coordinated with other teams to develop various data models tailored to their specific use cases, then integrated them by enhancing or creating new data pipelines and ETLs."
+        }
+      ]
+    },
+    {
+      "title": "Data Engineer II - Part Time (Data Analytics Team)",
+      "company": "In-House",
+      "duration": "October 2022 - March 2023",
+      "description": [
+        {
+          "item": "Orchestrated the establishment of foundational data infrastructure on Google Cloud Platform (GCP), leveraging BigQuery as the central data warehouse and harnessing the efficiency of AirByte for streamlined data pipeline orchestration."
+        },
+        {
+          "item": "Set up Hadoop clusters for fast data processing. Created pipelines for data input and managed processing tasks. Used Hadoop tools like HDFS, MapReduce, and Hive to analyze large datasets, extract insights, and inform data-driven decisions."
+        },
+        {
+          "item": "Devised intricate data models in alignment with diverse use cases identified by the business leadership, ensuring a robust architecture to support decision-making."
+        },
+        {
+          "item": "Executed seamless implementation of data models using DBT alongside custom Python-based ETL/ELT solutions, driving the transformation and enrichment of data."
+        },
+        {
+          "item": "Demonstrated proficiency in crafting dynamic insights by harnessing Metabase, leading to the design and deployment of a comprehensive dashboard that catered to the exact informational needs of the business leadership."
+        },
+        {
+          "item": "Assumed a mentorship and managerial role, effectively guiding and overseeing the professional growth of new team members, fostering a collaborative and knowledge-sharing environment."
+        }
+      ]
+    },
+    {
+      "title": "Data Engineer (Data Team)",
+      "company": "Prime Clerk LLC",
+      "duration": "April 2015 - July 2021",
+      "description": [
+        {
+          "item": "Proficiently authored, debugged, and fine-tuned SQL queries, ensuring optimal database performance."
+        },
+        {
+          "item": "Performed complex data analysis and provided critical time sensitive reports to support all departments."
+        },
+        {
+          "item": "Go-to person for developing ETL solutions for various databases that contain millions of rows of data each."
+        },
+        {
+          "item": "Engineered efficient automation tools utilizing C# (.NET Core) and Python (NumPy / Pandas), streamlining processes and enhancing productivity."
+        },
+        {
+          "item": "Developed and deployed a repertoire of over 80 Excel macros utilizing VBA and Power Query, enabling seamless ETL operations, robust reporting, and process automation."
+        },
+        {
+          "item": "Team lead in charge of creating processes and procedures for projects, importing large client data sets, developing complex tools, SOP (standard operating procedure) creation, and new hire training."
+        },
+        {
+          "item": "Experience creating Data Warehouses to analyze unique client data (AWS Redshift and SQL Server)."
+        }
+      ]
+    }
+  ],
+  "Education": [
+    {
+      "degree": "Bachelor of Arts in Computer Science",
+      "school": "City University of New York - Hunter College",
+      "duration": "2011-2015"
+    }
+  ],
+  "Skills": [
+    {
+      "category": "AWS",
+      "technologies": ["Glue", "Lambda", "S3", "EC2", "Boto3 SDK", "Redshift", "Aurora RDS", "Databricks", "Athena"]
+    },
+    {
+      "category": "Azure",
+      "technologies": ["Data Factory", "Storage", "Spark", "DevOps", "SDK", "Synapse", "SQL Server", "Databricks"]
+    },
+    {
+      "category": "GCP",
+      "technologies": ["Cloud Composer", "Storage", "AI Studio", "Vertex AI", "SDK", "BigQuery"]
+    },
+    {
+      "category": "Databricks",
+      "technologies": ["Unity Catalogs", "Jobs/Scheduling", "Repositories", "REST API", "Databricks SQL"]
+    },
+    {
+      "category": "Snowflake",
+      "technologies": ["Snowpark", "Snowflake SQL"]
+    },
+    {
+      "category": "Databases",
+      "technologies": ["SAP Hana", "MongoDB", "PostgreSQL", "MySQL", "SQL Server"]
+    },
+    {
+      "category": "Programming",
+      "technologies": ["Python", "C#", "JavaScript", "React", "TypeScript", "Angular"]
+    },
+    {
+      "category": "AI & ML",
+      "technologies": ["OpenAI API", "Anthropic API", "Gemini API", "AI Studio", "Claude Code", "Cursor", "LangChain", "RAG", "Vector Databases"]
+    },
+    {
+      "category": "Data Engineering Tools",
+      "technologies": ["Airflow", "AirByte", "DBT", "FiveTran", "Spark", "Hadoop"]
+    },
+    {
+      "category": "Python Packages",
+      "technologies": ["Pandas", "Spark", "NumPy", "Beautiful Soup", "Selenium", "Flask"]
+    }
+  ],
+  "Contact": {
+    "name": "Kevin Singh",
+    "title": "Senior Data Engineer",
+    "email": "kevinsingh.developer@gmail.com",
+    "phone": "646-244-7509",
+    "address": "559 Hawkins Rd, Selden, NY, 11784",
+    "linkedin": "https://www.linkedin.com/in/kevin-singh-908547b4",
+    "github": "https://github.com/kevinsinghdeveloper",
+    "website": "http://thekevinsingh.com"
+  },
+  "Summary": "Data Engineer with 10+ years of experience designing and optimizing data solutions across traditional and modern architectures. Skilled in conducting data discovery calls and collaborative working sessions. Recently applied Generative AI to enhance pipelines, enabling smarter automation and insights. Expert in cloud data warehouses (AWS, Azure, GCP), ETL/ELT development, and building scalable data infrastructure for enterprise analytics."
+}

@@ -1,77 +1,101 @@
 <main class="page projects-page">
-  <section class="portfolio-block projects-cards">
-    <div style="text-align:center;">
-      <h2 class="divider-style"><span>Projects</span></h2>
-    </div>
-    <div style="text-align:center;"></div>
+  <section class="portfolio-block projects-cards py-5">
     <div class="container">
-      <div class="heading"></div>
-      <div class="row">
+      <div class="text-center mb-5">
+        <h2 class="display-4 fw-bold mb-3">Projects & Work Experience</h2>
+        <p class="lead text-muted">A showcase of professional experience and personal projects in data engineering and software development</p>
+      </div>
 
-<!--
-        <div class="col-md-6 col-lg-4">
-          <div class="card border-0"><a href="#"><img class="card-img-top scale-on-hover" src="assets/img/nature/image1.jpg" alt="Card Image"></a>
-            <div class="card-body">
-              <h6><a href="#">Lorem Ipsum</a></h6>
-              <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
-            </div>
-          </div>
-        </div>
--->
-        <div class="col-md-6 col-lg-4 unhide-hover" *ngFor="let project of projects; let i=index">
-          <div class="card border-0">
-            <a><img class="card-img-top scale-on-hover project-logo" src={{project.logoImageUrl}} alt="Card Image"></a>
-            <div class="card-body">
-              <h6>{{project.name}} - {{project.employmentType}} / {{project.projectType}}</h6>
-              <p class="text-muted card-text">{{project.description}}</p>
-              <p class="text-muted card-text hover-desc">{{project.information}}</p>
-            </div>
-          </div>
+      <!-- GitHub Projects Section -->
+      <div *ngIf="githubProjects.length > 0" class="mb-5">
+        <h3 class="h2 fw-bold mb-4 text-primary">
+          <i class="fab fa-github me-2"></i>Open Source & Personal Projects
+        </h3>
 
-        </div>
-        <!--
+        <div *ngFor="let ghProject of githubProjects" class="mb-5">
+          <div class="card shadow-lg border-0 overflow-hidden">
+            <div class="card-header bg-gradient-primary text-white p-4">
+              <div class="d-flex justify-content-between align-items-start flex-wrap">
+                <div>
+                  <h4 class="mb-2">{{ghProject.projectName}}</h4>
+                  <p class="mb-2 opacity-90">{{ghProject.description}}</p>
+                  <div class="d-flex gap-2 flex-wrap">
+                    <span class="badge bg-light text-dark">{{ghProject.category}}</span>
+                    <span class="badge bg-light text-dark">{{ghProject.status}}</span>
+                    <span class="badge bg-light text-dark">{{ghProject.year}}</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-3">
+                <strong class="d-block mb-2">Tech Stack:</strong>
+                <div class="d-flex gap-2 flex-wrap">
+                  <span *ngFor="let tech of ghProject.technologies" class="badge bg-dark">{{tech}}</span>
+                </div>
+              </div>
+            </div>
 
-        <div class="col-md-6 col-lg-4">
-          <div class="card border-0"><a href="#"><img class="card-img-top scale-on-hover" src="assets/img/nature/image2.jpg" alt="Card Image"></a>
-            <div class="card-body">
-              <h6><a href="#">Lorem Ipsum</a></h6>
-              <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+            <div class="card-body p-4">
+              <div class="row g-4">
+                <div *ngFor="let repo of ghProject.repositories" class="col-lg-4 col-md-6">
+                  <div class="card h-100 border shadow-sm hover-lift">
+                    <div class="card-body">
+                      <div class="d-flex align-items-start mb-3">
+                        <i class="fab fa-github fs-3 text-primary me-2"></i>
+                        <div>
+                          <h6 class="card-title mb-1 fw-bold">{{repo.name}}</h6>
+                          <a [href]="repo.githubUrl" target="_blank" class="text-decoration-none small">
+                            View on GitHub <i class="fas fa-external-link-alt"></i>
+                          </a>
+                        </div>
+                      </div>
+
+                      <p class="card-text small text-muted mb-3">{{repo.description}}</p>
+
+                      <div class="mb-3">
+                        <strong class="small d-block mb-2">Technologies:</strong>
+                        <div class="d-flex gap-1 flex-wrap">
+                          <span *ngFor="let tech of repo.techStack" class="badge bg-secondary small">{{tech}}</span>
+                        </div>
+                      </div>
+
+                      <div *ngIf="repo.highlights.length > 0">
+                        <strong class="small d-block mb-2">Key Features:</strong>
+                        <ul class="small mb-0 ps-3">
+                          <li *ngFor="let highlight of repo.highlights" class="mb-1">{{highlight}}</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="card border-0"><a href="#"><img class="card-img-top scale-on-hover" src="assets/img/nature/image3.jpg" alt="Card Image"></a>
-            <div class="card-body">
-              <h6><a href="#">Lorem Ipsum</a></h6>
-              <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+      </div>
+
+      <!-- Employment Projects Section -->
+      <div *ngIf="projects.length > 0">
+        <h3 class="h2 fw-bold mb-4 text-primary">
+          <i class="fas fa-briefcase me-2"></i>Professional Experience
+        </h3>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6" *ngFor="let project of projects">
+            <div class="card h-100 border-0 shadow-sm hover-lift">
+              <div class="card-img-wrapper overflow-hidden" style="height: 200px; background-color: #f8f9fa;">
+                <img class="card-img-top w-100 h-100 object-fit-contain p-3" [src]="project.logoImageUrl" [alt]="project.name">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title fw-bold">{{project.name}}</h5>
+                <div class="mb-2">
+                  <span class="badge bg-primary me-1">{{project.employmentType}}</span>
+                  <span class="badge bg-secondary">{{project.projectType}}</span>
+                </div>
+                <p class="card-text text-muted mb-2">{{project.description}}</p>
+                <p class="card-text small">{{project.information}}</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="card border-0"><a href="#"><img class="card-img-top scale-on-hover" src="assets/img/nature/image4.jpg" alt="Card Image"></a>
-            <div class="card-body">
-              <h6><a href="#">Lorem Ipsum</a></h6>
-              <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="card border-0"><a href="#"><img class="card-img-top scale-on-hover" src="assets/img/nature/image5.jpg" alt="Card Image"></a>
-            <div class="card-body">
-              <h6><a href="#">Lorem Ipsum</a></h6>
-              <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="card border-0"><a href="#"><img class="card-img-top scale-on-hover" src="assets/img/nature/image6.jpg" alt="Card Image"></a>
-            <div class="card-body">
-              <h6><a href="#">Lorem Ipsum</a></h6>
-              <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
-            </div>
-          </div>
-        </div>
-        -->
       </div>
     </div>
   </section>

@@ -1,1 +1,46 @@
-//@import '../../../assets/scss/responsive.scss';
+/* Modern About Me Styling */
+.cv-page {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  padding-top: 100px;
+}
+
+.timeline {
+  position: relative;
+}
+
+.timeline-item {
+  transition: transform 0.3s ease;
+}
+
+.timeline-item:hover {
+  transform: translateX(5px);
+}
+
+.badge {
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+}
+
+.contact-details a {
+  color: #2d3748;
+  transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+  color: #667eea;
+}
+
+.card {
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+.badge.bg-light {
+  background-color: #f8f9fa !important;
+  font-weight: 500;
+}
