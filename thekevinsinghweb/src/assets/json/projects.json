@@ -11,7 +11,7 @@
   {
     "name": "SwipeSwipe",
     "description": "E-commerce Automation",
-    "logoImageUrl": "assets/img/company/swipeswipe.png",
+    "logoImageUrl": "https://swipeswipe.co/wp-content/uploads/2023/06/Swipe-Swipe-Logo-Blue-1.png",
     "employmentType": "Part Time",
     "projectType": "Lead Engineer",
     "information": "Founding Lead Data Engineer building GenAI-powered data infrastructure. Led team of 5 engineers, implemented Spark pipelines with Airflow orchestration, and developed modular ETL architecture using Gemini, OpenAI, and Claude AI APIs.",
