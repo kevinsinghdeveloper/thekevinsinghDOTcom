@@ -46,5 +46,30 @@
     "projectType": "Personal Project",
     "status": "Active Development",
     "year": "2024"
+  },
+  {
+    "projectName": "ZerveMeData Product Pricing Warehouse",
+    "description": "AI enriched product pricing data warehouse for retail customers",
+    "category": "Data Engineering & Pipeline Orchestration",
+    "githubUrl": "https://github.com/kevinsinghdeveloper/zervemedataplatform",
+    "technologies": ["Python", "Apache Spark 3.5.2", "PostgreSQL", "AWS S3", "OpenAI", "Google Gemini", "Ollama", "LangChain", "Selenium"],
+    "repositories": [
+      {
+        "name": "ZerveMeData Platform Tools",
+        "description": "Platform / Tooling for automated e-commerce data extraction, AI-powered enrichment, and pipeline orchestration",
+        "githubUrl": "https://github.com/kevinsinghdeveloper/zervemedataplatform",
+        "techStack": ["Python", "Apache Spark 3.5.2", "PostgreSQL", "AWS S3", "OpenAI", "Google Gemini", "Ollama", "LangChain", "Selenium"],
+        "highlights": [
+          "Multi-stage pipeline orchestration with checkpointing and progress tracking",
+          "Browser automation for e-commerce web scraping",
+          "AI-powered data enrichment across multiple LLM providers",
+          "Distributed big data processing with Apache Spark",
+          "Database connectors with auto-schema generation for PostgreSQL and Spark SQL"
+        ]
+      }
+    ],
+    "projectType": "Personal Project",
+    "status": "Active Development",
+    "year": "2025"
   }
 ]
