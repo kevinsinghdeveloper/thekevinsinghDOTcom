@@ -6,6 +6,8 @@ import {ProjectsComponent} from './projects/projects.component';
 import {AboutMeComponent} from './aboutme/aboutme.component';
 import {HireMeComponent} from './hireme/hireme.component';
 import {AdminComponent} from "./admin/admin.component";
+import {TopicsComponent} from './topics/topics.component';
+import {TopicDetailComponent} from './topic-detail/topic-detail.component';
 
 const routes: Routes = [
   {
@@ -23,8 +25,15 @@ const routes: Routes = [
       {
         path: 'projects',
         component: ProjectsComponent
-      }
-      ,
+      },
+      {
+        path: 'topics',
+        component: TopicsComponent
+      },
+      {
+        path: 'topic/:id',
+        component: TopicDetailComponent
+      },
       {
         path: 'aboutme',
         component: AboutMeComponent

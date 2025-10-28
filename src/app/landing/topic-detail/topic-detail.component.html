@@ -1,0 +1,25 @@
+<main class="page topic-detail-page">
+  <section class="portfolio-block py-5" *ngIf="topic">
+    <div class="container">
+      <div class="mb-4">
+        <button class="btn btn-outline-primary" (click)="goBack()">
+          <i class="fas fa-arrow-left me-2"></i>Back to Topics
+        </button>
+      </div>
+
+      <div class="card border-0 shadow-sm">
+        <div class="card-body p-4 p-md-5">
+          <div class="mb-4">
+            <span class="badge bg-primary mb-3">{{topic.category}}</span>
+            <h1 class="display-5 fw-bold mb-3">{{topic.title}}</h1>
+            <p class="lead text-muted">{{topic.excerpt}}</p>
+          </div>
+
+          <hr class="my-4">
+
+          <div class="topic-content" [innerHTML]="safeHtmlContent"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
