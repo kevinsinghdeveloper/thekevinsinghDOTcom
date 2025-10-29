@@ -310,4 +310,58 @@
   .topic-content .solution-grid {
     grid-template-columns: 1fr;
   }
+
+  /* Mobile-friendly table wrapper */
+  .topic-content table {
+    display: block !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    font-size: 0.9rem !important;
+  }
+
+  .topic-content table thead {
+    display: table-header-group !important;
+  }
+
+  .topic-content table tbody {
+    display: table-row-group !important;
+  }
+
+  .topic-content table tr {
+    display: table-row !important;
+  }
+
+  .topic-content table th,
+  .topic-content table td {
+    display: table-cell !important;
+    min-width: 120px !important;
+    padding: 0.5rem !important;
+    font-size: 0.85rem !important;
+  }
+
+  /* Reduce padding for better mobile fit */
+  .topic-content {
+    font-size: 1rem;
+  }
+
+  .topic-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .topic-content h3 {
+    font-size: 1.25rem;
+  }
+
+  .topic-content h4 {
+    font-size: 1.1rem;
+  }
+
+  /* Make intro boxes more compact on mobile */
+  .topic-content .intro,
+  .topic-content .key-takeaway,
+  .topic-content .example-box,
+  .topic-content .warning-box {
+    padding: 1rem !important;
+    font-size: 0.95rem !important;
+  }
 }
