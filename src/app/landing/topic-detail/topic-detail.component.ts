@@ -3,11 +3,20 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { JsonManagerService } from '../../global_services/json-manager.service';
 
+interface Author {
+  name: string;
+  role: string;
+  avatar: string;
+}
+
 interface Topic {
   id: string;
   title: string;
   category: string;
   summary: string;
+  authors: Author[];
+  publishDate: string;
+  readTime: string;
   content: string;
 }
 

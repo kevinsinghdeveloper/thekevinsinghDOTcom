@@ -142,3 +142,43 @@
   margin-bottom: 0.75rem;
   color: #6c757d;
 }
+
+.authors-section {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.author-card {
+  transition: all 0.3s ease;
+}
+
+.author-avatar {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border: 3px solid white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.author-name {
+  font-size: 1rem;
+  color: #212529;
+}
+
+.author-role {
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+@media (max-width: 768px) {
+  .authors-section .ms-auto {
+    margin-left: 0 !important;
+    margin-top: 1rem;
+  }
+
+  .author-avatar {
+    width: 48px;
+    height: 48px;
+  }
+}

@@ -15,7 +15,22 @@
             <p class="lead text-muted">{{topic.summary}}</p>
           </div>
 
-          <hr class="my-4">
+          <!-- Authors Section -->
+          <div class="authors-section mb-4 pb-4 border-bottom">
+            <div class="d-flex flex-wrap align-items-center gap-3">
+              <div *ngFor="let author of topic.authors" class="author-card d-flex align-items-center">
+                <img [src]="author.avatar" [alt]="author.name" class="author-avatar rounded-circle me-3">
+                <div>
+                  <div class="author-name fw-semibold">{{author.name}}</div>
+                  <div class="author-role text-muted small">{{author.role}}</div>
+                </div>
+              </div>
+              <div class="ms-auto text-muted small d-flex gap-3">
+                <span><i class="fas fa-calendar-alt me-1"></i>{{topic.publishDate}}</span>
+                <span><i class="fas fa-clock me-1"></i>{{topic.readTime}}</span>
+              </div>
+            </div>
+          </div>
 
           <div class="topic-content" [innerHTML]="safeHtmlContent"></div>
         </div>
