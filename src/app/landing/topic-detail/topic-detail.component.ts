@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { JsonManagerService } from '../../global_services/json-manager.service';
@@ -7,14 +7,15 @@ interface Topic {
   id: string;
   title: string;
   category: string;
-  excerpt: string;
+  summary: string;
   content: string;
 }
 
 @Component({
   selector: 'app-topic-detail',
   templateUrl: './topic-detail.component.html',
-  styleUrls: ['./topic-detail.component.css']
+  styleUrls: ['./topic-detail.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class TopicDetailComponent implements OnInit {
 
