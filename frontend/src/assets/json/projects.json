@@ -1,5 +1,23 @@
 [
   {
+    "name": "Zerve App",
+    "description": "Time Tracking SaaS Platform",
+    "logoImageUrl": "assets/img/company/zerveme.PNG",
+    "employmentType": "Side Project",
+    "projectType": "Full-Stack Architect",
+    "information": "Architected and deployed a full-stack time tracking SaaS with React 18 + TypeScript frontend, Flask API on AWS Lambda, DynamoDB with pluggable PostgreSQL support, Cognito JWT auth, and Terraform-managed infrastructure. Features include project management, timesheet approval workflows, AI chat analytics, Stripe billing, and RBAC with organization isolation.",
+    "projectId": "ZA2024"
+  },
+  {
+    "name": "Zerve Legal",
+    "description": "AI Document Processing Platform",
+    "logoImageUrl": "assets/img/company/zerveme.PNG",
+    "employmentType": "Side Project",
+    "projectType": "Full-Stack Architect",
+    "information": "Built an SBA loan document management platform with AI-powered data extraction using LangChain (OpenAI + Anthropic). Features dynamic form builder, multi-role RBAC (admin/lendee/lender), bulk CSV/XLSX import, and S3 signed URLs for secure document access. Deployed on serverless AWS with Terraform IaC and GitHub Actions CI/CD.",
+    "projectId": "ZL2024"
+  },
+  {
     "name": "AnswerRocket",
     "description": "AI-Powered Analytics Platform",
     "logoImageUrl": "https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_91728a3c9f4bb94623834ffff818d134/answerrocket.jpg",

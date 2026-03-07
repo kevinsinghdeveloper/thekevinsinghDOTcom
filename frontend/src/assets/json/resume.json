@@ -1,6 +1,28 @@
 {
   "Experience": [
     {
+      "title": "Full-Stack Engineer & Cloud Architect (Side Projects)",
+      "company": "Zerve LLC",
+      "duration": "2024 - Present",
+      "description": [
+        {
+          "item": "Architected and deployed a full-stack time tracking SaaS (zerve-app) with React 18 + TypeScript frontend, Flask API backend running on AWS Lambda via apig-wsgi, DynamoDB with pluggable PostgreSQL support via repository pattern, and Cognito JWT authentication."
+        },
+        {
+          "item": "Built an AI-powered document management platform (zerve-legal) for SBA loan processing with LangChain (OpenAI + Anthropic), dynamic form builder, bulk CSV/XLSX import, and multi-role RBAC."
+        },
+        {
+          "item": "Implemented a 4-layer backend architecture (Controllers, Managers, Services, Database) with repository pattern supporting both DynamoDB and PostgreSQL backends, switchable via environment variable."
+        },
+        {
+          "item": "Provisioned complete AWS infrastructure using Terraform: S3 + CloudFront (frontend), Lambda + API Gateway (backend), DynamoDB, Cognito, Route53, and ACM for multiple production applications."
+        },
+        {
+          "item": "Designed GitHub Actions CI/CD pipelines with automated linting, testing (180+ unit tests, 30+ integration tests), security scanning, and zero-downtime deployment."
+        }
+      ]
+    },
+    {
       "title": "Senior Data Engineer (AI Focused / AI Data Content Team)",
       "company": "AnswerRocket LLC",
       "duration": "August 2021 - Present",
@@ -117,7 +139,7 @@
   "Skills": [
     {
       "category": "AWS",
-      "technologies": ["Glue", "Lambda", "S3", "EC2", "Boto3 SDK", "Redshift", "Aurora RDS", "Databricks", "Athena"]
+      "technologies": ["Glue", "Lambda", "S3", "EC2", "Boto3 SDK", "Redshift", "Aurora RDS", "Databricks", "Athena", "API Gateway", "DynamoDB", "CloudFront", "Cognito", "Route53", "ACM", "IAM", "CloudWatch"]
     },
     {
       "category": "Azure",
@@ -133,7 +155,7 @@
     },
     {
       "category": "Snowflake",
-      "technologies": ["Snowpark", "Snowflake SQL"]
+      "technologies": ["Snowpark", "Snowflake SQL", "Data Sharing", "Streams & Tasks", "Dynamic Tables", "Snowpipe"]
     },
     {
       "category": "Databases",
@@ -141,11 +163,15 @@
     },
     {
       "category": "Programming",
-      "technologies": ["Python", "C#", "JavaScript", "React", "TypeScript", "Angular"]
+      "technologies": ["Python", "C#", "JavaScript", "React", "TypeScript", "Angular", "Flask", "Node.js"]
     },
     {
       "category": "AI & ML",
       "technologies": ["OpenAI API", "Anthropic API", "Gemini API", "AI Studio", "Claude Code", "Cursor", "LangChain", "RAG", "Vector Databases"]
+    },
+    {
+      "category": "Infrastructure & DevOps",
+      "technologies": ["Terraform", "Docker", "GitHub Actions", "Bitbucket Pipelines", "CI/CD"]
     },
     {
       "category": "Data Engineering Tools",
@@ -166,5 +192,5 @@
     "github": "https://github.com/kevinsinghdeveloper",
     "website": "http://thekevinsingh.com"
   },
-  "Summary": "Data Engineer with 10+ years of experience designing and optimizing data solutions across traditional and modern architectures. Skilled in conducting data discovery calls and collaborative working sessions. Recently applied Generative AI to enhance pipelines, enabling smarter automation and insights. Expert in cloud data warehouses (AWS, Azure, GCP), ETL/ELT development, and building scalable data infrastructure for enterprise analytics."
+  "Summary": "Data Engineer with 10+ years of experience designing and optimizing data solutions across traditional and modern architectures. Skilled in conducting data discovery calls and collaborative working sessions. Recently applied Generative AI to enhance pipelines, enabling smarter automation and insights. Expert in cloud data warehouses (AWS, Azure, GCP), ETL/ELT development, and building scalable data infrastructure for enterprise analytics. Also builds full-stack applications and AWS cloud infrastructure as side projects, deploying production SaaS apps on serverless architectures using Terraform, GitHub Actions CI/CD, and modern web frameworks (React, Flask)."
 }
