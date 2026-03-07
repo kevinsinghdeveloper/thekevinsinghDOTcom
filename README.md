@@ -1,27 +1,83 @@
-# Thekevinsinghweb
+# thekevinsingh.com
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.2.
+Personal portfolio and blog site built with Angular 15, deployed to AWS via S3 + CloudFront.
 
-## Development server
+## Project Structure
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+```
+thekevinsinghDOTcom/
+  frontend/               # Angular 15 + Bootstrap 5 + Ionic
+    src/
+      app/
+        landing/           # Main pages (home, aboutme, hireme, projects, topics)
+        shared/            # Header, footer components
+        global_services/   # JSON manager, loading spinner, toast services
+        guard/             # Auth guard
+        interceptors/      # Spinner interceptor
+      assets/              # Images, fonts, JSON data, CSS
+      environments/        # Environment configs (dev/prod)
+  infrastructure/          # Terraform IaC
+    terraform/aws/         # S3, CloudFront, Route53 (optional)
+  .github/workflows/       # CI/CD: build + deploy on push to develop/main
+```
 
-## Code scaffolding
+## Local Development
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```bash
+cd frontend
+npm install
+ng serve              # http://localhost:4200
+```
 
-## Build
+## Production Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+```bash
+cd frontend
+ng build --configuration production
+# Output: frontend/dist/thekevinsinghweb/
+```
 
-## Running unit tests
+## Deployment
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Deployment is automated via GitHub Actions on push to `develop` or `main`:
 
-## Running end-to-end tests
+1. Builds Angular production bundle
+2. Syncs to S3 (`thekevinsingh-dev-frontend-396326422827`)
+3. Invalidates CloudFront cache (`E1GYZMRQ42S0N7`)
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+**Live URL**: https://d31q41f95i2by7.cloudfront.net
 
-## Further help
+### Manual Deploy
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+cd frontend
+ng build --configuration production
+aws s3 sync dist/thekevinsinghweb/ s3://thekevinsingh-dev-frontend-396326422827 --delete
+aws cloudfront create-invalidation --distribution-id E1GYZMRQ42S0N7 --paths "/*"
+```
+
+## Infrastructure
+
+Managed with Terraform in `infrastructure/terraform/aws/`:
+
+| Resource | Purpose |
+|----------|---------|
+| S3 Bucket | Frontend static hosting (versioned, encrypted, private) |
+| CloudFront | CDN with HTTPS, HTTP/2+3, gzip, SPA routing |
+| Route53 | DNS (optional, for custom domain) |
+
+```bash
+cd infrastructure/terraform/aws
+terraform init
+terraform plan
+terraform apply
+```
+
+## GitHub Secrets
+
+| Secret | Purpose |
+|--------|---------|
+| `AWS_ACCESS_KEY_ID` | IAM user for deploy |
+| `AWS_SECRET_ACCESS_KEY` | IAM user secret |
+| `FRONTEND_BUCKET` | S3 bucket name |
+| `CLOUDFRONT_DISTRIBUTION_ID` | CloudFront distribution ID |
