@@ -23,27 +23,33 @@
       ]
     },
     {
-      "title": "Senior Data Engineer (AI Focused / AI Data Content Team)",
+      "title": "Senior Data Engineer (AI Focused / Modern Data Practice)",
       "company": "AnswerRocket LLC",
       "duration": "August 2021 - Present",
       "description": [
         {
-          "item": "Spearheaded the client integration process, orchestrating seamless integration of client data into the Answer Rocket platform. This involved conducting Data Discovery meetings, designing, and implementing ETL solutions, and navigating various cloud data warehouses."
+          "item": "Architected and implemented a Databricks-based survey analytics platform processing large-scale consumer research datasets using PySpark-native transformations, dynamic column-definition metadata, and incremental Change Data Feed pipelines, powering downstream analytics and reporting systems."
         },
         {
-          "item": "Demonstrated prowess across a spectrum of leading cloud data warehouses including Redshift, Synapse, Big Query, and Snowflake."
+          "item": "Led data discovery and architecture sessions across 20+ enterprise clients, translating complex business requirements into scalable ETL pipelines and accelerating onboarding for AI-driven analytics deployments."
         },
         {
-          "item": "Revamped in-house ETL Toolkit API using Python and SQL, introducing new features that streamline data transformation, extraction, and loading (ETL/ELT) tasks. Significantly expanded capabilities to seamlessly process data from S3, Azure Blob, and Google Cloud Storage."
+          "item": "Acted as customer-facing technical lead, guiding organizations through data assessment, schema design, and ETL implementation to support AI analytics platforms or knowledge transfer to client-managed infrastructure."
         },
         {
-          "item": "Drove impactful outcomes while working with substantial datasets encompassing billions of rows, primarily within the CPG realm (with a focus on Nielsen CPG data), as well as the Pharmaceutical and Legal sectors."
+          "item": "Developed large-scale ingestion and transformation pipelines processing billions of rows for enterprise CPG clients including Beam Suntory, Kimberly-Clark, Wella, General Mills, Coty, and National Beverage, integrating Nielsen, Kantar, IRI, SPINS, and Toluna data sources."
         },
         {
-          "item": "Designed and implemented data pipelines for diverse datasets, applying specialized data modeling techniques and selecting the most optimal tools to ensure efficiency and scalability."
+          "item": "Architected a config-driven ETL platform on Azure + Snowflake, ingesting 40+ API endpoints and 69 Excel mapping definitions through a Medallion architecture, powering Power BI DirectQuery dashboards."
         },
         {
-          "item": "Utilized cutting-edge AI technologies to enhance and optimize existing data pipeline toolsets."
+          "item": "Implemented reusable orchestration logic for dependent API workflows, enabling sequential API retrieval pipelines while minimizing redundant requests through caching and checkpointing."
+        },
+        {
+          "item": "Provisioned platform infrastructure using Terraform + Terragrunt, managing Azure storage, Snowflake resources, and Azure Function Apps with GitHub Actions CI/CD for automated infrastructure and pipeline deployment."
+        },
+        {
+          "item": "Designed complex brand tracking analytics pipelines for global Beam Suntory Spirits/RTD programs, implementing multi-wave survey harmonization, weighted metric calculations, and cross-market aggregations across 15+ international markets."
         }
       ]
     },
@@ -106,25 +112,22 @@
       "duration": "April 2015 - July 2021",
       "description": [
         {
-          "item": "Proficiently authored, debugged, and fine-tuned SQL queries, ensuring optimal database performance."
+          "item": "Played a key role in modernizing the company's data infrastructure, transitioning multiple business units and organizations to a centralized Microsoft-based data platform built on SQL Server, Power Query, and automated ETL workflows."
         },
         {
-          "item": "Performed complex data analysis and provided critical time sensitive reports to support all departments."
+          "item": "Designed and maintained ETL pipelines for large, complex datasets, enabling standardized ingestion, transformation, and reporting across multiple departments."
         },
         {
-          "item": "Go-to person for developing ETL solutions for various databases that contain millions of rows of data each."
+          "item": "Authored and optimized advanced SQL queries and database procedures, improving query performance and enabling scalable analytics for internal reporting systems."
         },
         {
-          "item": "Engineered efficient automation tools utilizing C# (.NET Core) and Python (NumPy / Pandas), streamlining processes and enhancing productivity."
+          "item": "Developed automation tools in C# (.NET Core) and Python (NumPy / Pandas) to streamline data transformation workflows and reduce manual processing."
         },
         {
-          "item": "Developed and deployed a repertoire of over 80 Excel macros utilizing VBA and Power Query, enabling seamless ETL operations, robust reporting, and process automation."
+          "item": "Built and maintained 80+ Excel automation solutions using VBA and Power Query, enabling business teams to execute repeatable ETL operations, automate reporting, and reduce operational overhead."
         },
         {
-          "item": "Team lead in charge of creating processes and procedures for projects, importing large client data sets, developing complex tools, SOP (standard operating procedure) creation, and new hire training."
-        },
-        {
-          "item": "Experience creating Data Warehouses to analyze unique client data (AWS Redshift and SQL Server)."
+          "item": "Partnered with business stakeholders and operations teams to translate reporting and operational requirements into automated data workflows and analytics tools."
         }
       ]
     }
