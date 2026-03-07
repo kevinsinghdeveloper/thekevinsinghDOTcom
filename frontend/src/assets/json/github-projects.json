@@ -1,0 +1,75 @@
+[
+  {
+    "projectName": "ZerveMe AI Platform",
+    "description": "A comprehensive AI-powered competitive intelligence and analytics platform",
+    "category": "AI/ML & Data Engineering",
+    "githubUrl": "https://github.com/kevinsinghdeveloper",
+    "technologies": ["Python", "Flask", "React", "TypeScript", ".NET 8", "OpenAI GPT", "BigQuery", "PostgreSQL", "Docker"],
+    "repositories": [
+      {
+        "name": "ZerveMeData ETL API",
+        "description": "Flask-based ETL service generating AI-powered competitive intelligence reports using LLMs",
+        "githubUrl": "https://github.com/kevinsinghdeveloper/zerveme_ai_etl_api",
+        "techStack": ["Python", "Flask", "OpenAI GPT-4", "Docker", "Sentence-BERT", "TF-IDF"],
+        "highlights": [
+          "AI-powered competitor analysis and market intelligence",
+          "Dynamic ETL report module loading",
+          "LLM response caching to reduce API costs",
+          "Multi-turn conversation context maintenance"
+        ]
+      },
+      {
+        "name": "ZerveMeData Frontend",
+        "description": "Modern React + TypeScript SaaS platform for tracking and optimizing AI search rankings",
+        "githubUrl": "https://github.com/kevinsinghdeveloper/zerveme_ai_fe",
+        "techStack": ["React 18", "TypeScript", "Material UI", "Chart.js", "Bootstrap 5", "Axios"],
+        "highlights": [
+          "JWT-based authentication with protected routes",
+          "Template-driven dashboard rendering",
+          "Dynamic visualization (metrics, charts, tables, grids)",
+          "Hierarchical project organization system"
+        ]
+      },
+      {
+        "name": "ZerveMeData Backend API",
+        "description": "Comprehensive .NET backend for managing datasets, warehouses, and analytics jobs",
+        "githubUrl": "https://github.com/kevinsinghdeveloper/zerveme_ai_backend_api",
+        "techStack": [".NET 8", "ASP.NET Core", "Entity Framework", "SQL Server", "BigQuery", "PostgreSQL", "JWT"],
+        "highlights": [
+          "Multi-tenant architecture with row-level security",
+          "Support for multiple data warehouse backends",
+          "Background job scheduling for recurring tasks",
+          "Role-based authorization (User, Admin, SuperAdmin)"
+        ]
+      }
+    ],
+    "projectType": "Personal Project",
+    "status": "Active Development",
+    "year": "2024"
+  },
+  {
+    "projectName": "ZerveMeData Product Pricing Warehouse",
+    "description": "AI enriched product pricing data warehouse for retail customers",
+    "category": "Data Engineering & Pipeline Orchestration",
+    "githubUrl": "https://github.com/kevinsinghdeveloper/zervemedataplatform",
+    "technologies": ["Python", "Apache Spark 3.5.2", "PostgreSQL", "AWS S3", "OpenAI", "Google Gemini", "Ollama", "LangChain", "Selenium"],
+    "repositories": [
+      {
+        "name": "ZerveMeData Platform Tools",
+        "description": "Platform / Tooling for automated e-commerce data extraction, AI-powered enrichment, and pipeline orchestration",
+        "githubUrl": "https://github.com/kevinsinghdeveloper/zervemedataplatform",
+        "techStack": ["Python", "Apache Spark 3.5.2", "PostgreSQL", "AWS S3", "OpenAI", "Google Gemini", "Ollama", "LangChain", "Selenium"],
+        "highlights": [
+          "Multi-stage pipeline orchestration with checkpointing and progress tracking",
+          "Browser automation for e-commerce web scraping",
+          "AI-powered data enrichment across multiple LLM providers",
+          "Distributed big data processing with Apache Spark",
+          "Database connectors with auto-schema generation for PostgreSQL and Spark SQL"
+        ]
+      }
+    ],
+    "projectType": "Personal Project",
+    "status": "Active Development",
+    "year": "2025"
+  }
+]
