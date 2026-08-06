@@ -45,6 +45,13 @@
   object-fit: contain;
 }
 
+.company-logo-square {
+  max-width: 100%;
+  max-height: 130px;
+  min-width: 110px;
+  object-fit: contain;
+}
+
 .tech-icon-wrapper {
   padding: 1rem;
   transition: all 0.3s ease;
