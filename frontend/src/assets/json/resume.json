@@ -1,12 +1,40 @@
 {
   "Experience": [
     {
-      "title": "Senior Data Engineer (AI Focused / Modern Data Practice)",
-      "company": "AnswerRocket LLC",
-      "duration": "August 2021 - Present",
+      "title": "Principal Data Engineer (Enterprise Data Strategy)",
+      "company": "Stanton Carpet Corp",
+      "duration": "July 2026 - Present",
       "description": [
         {
-          "item": "Architected and implemented a Databricks-based survey analytics platform processing large-scale consumer research datasets using PySpark-native transformations, dynamic column-definition metadata, and incremental Change Data Feed pipelines, powering downstream analytics and reporting systems."
+          "item": "Lead enterprise data platform integration engagements, partnering with executive leadership and business stakeholders to define data strategy, modernization roadmaps, and enterprise analytics initiatives."
+        },
+        {
+          "item": "Architect and implement modern cloud data platforms using Snowflake, Databricks, Microsoft Fabric, AWS, and Azure — delivering greenfield architectures and modernizing existing environments."
+        },
+        {
+          "item": "Design enterprise data warehouses and Lakehouse architectures integrating ERP, CRM, financial, and operational systems into centralized, governed platforms."
+        },
+        {
+          "item": "Architect and implement scalable ETL/ELT pipelines using Microsoft Fabric, Spark, and dbt, establishing Bronze/Silver/Gold data architectures with reusable Gold-layer transformations and automated testing."
+        },
+        {
+          "item": "Develop semantic models, KPI frameworks, and governed reporting layers that standardize business metrics and provide a consistent single source of truth across the organization."
+        },
+        {
+          "item": "Enable AI, machine learning, and advanced analytics initiatives by designing scalable, governed data foundations that support long-term business growth."
+        }
+      ]
+    },
+    {
+      "title": "Senior Data Engineer (AI Focused / Modern Data Practice)",
+      "company": "AnswerRocket LLC",
+      "duration": "August 2021 - July 2026",
+      "description": [
+        {
+          "item": "Led migration of legacy data engineering infrastructure to a Databricks Lakehouse architecture, rebuilding 100+ historical ETL pipelines using PySpark, Delta Live Tables, and Unity Catalog — reducing pipeline development time by 40% while enabling scalable Medallion (Bronze/Silver/Gold) data models."
+        },
+        {
+          "item": "Architected and implemented a Databricks-based survey analytics platform processing large-scale consumer research datasets using PySpark-native transformations, dynamic column-definition metadata, and incremental Change Data Feed pipelines."
         },
         {
           "item": "Led data discovery and architecture sessions across 20+ enterprise clients, translating complex business requirements into scalable ETL pipelines and accelerating onboarding for AI-driven analytics deployments."
@@ -25,9 +53,6 @@
         },
         {
           "item": "Provisioned platform infrastructure using Terraform + Terragrunt, managing Azure storage, Snowflake resources, and Azure Function Apps with GitHub Actions CI/CD for automated infrastructure and pipeline deployment."
-        },
-        {
-          "item": "Designed complex brand tracking analytics pipelines for global Beam Suntory Spirits/RTD programs, implementing multi-wave survey harmonization, weighted metric calculations, and cross-market aggregations across 15+ international markets."
         }
       ]
     },
@@ -62,7 +87,7 @@
       "duration": "2024 - Present",
       "description": [
         {
-          "item": "Architected and deployed a full-stack time tracking SaaS (zerve-app) with React 18 + TypeScript frontend, Flask API backend running on AWS Lambda via apig-wsgi, DynamoDB with pluggable PostgreSQL support via repository pattern, and Cognito JWT authentication."
+          "item": "Architected and deployed a full-stack time tracking SaaS (zerve-app) with React 18 + TypeScript frontend, Flask API backend running on AWS Lambda via apig-wsgi, DynamoDB with pluggable PostgreSQL support, and Cognito JWT authentication."
         },
         {
           "item": "Built an AI-powered document management platform (zerve-legal) for SBA loan processing with LangChain (OpenAI + Anthropic), dynamic form builder, bulk CSV/XLSX import, and multi-role RBAC."
@@ -142,58 +167,58 @@
   "Skills": [
     {
       "category": "AWS",
-      "technologies": ["Glue", "Lambda", "S3", "EC2", "Boto3 SDK", "Redshift", "Aurora RDS", "Databricks", "Athena", "API Gateway", "DynamoDB", "CloudFront", "Cognito", "Route53", "ACM", "IAM", "CloudWatch"]
+      "technologies": ["Redshift", "Aurora RDS", "Glue", "Lambda", "S3", "EC2", "Athena", "API Gateway", "DynamoDB", "CloudFront", "Cognito", "IAM", "CloudWatch", "Secrets Manager"]
     },
     {
       "category": "Azure",
-      "technologies": ["Data Factory", "Storage", "Spark", "DevOps", "SDK", "Synapse", "SQL Server", "Databricks"]
+      "technologies": ["Data Factory", "Azure SQL Database", "Blob Storage", "Databricks", "Synapse Analytics", "Azure DevOps", "Key Vault", "Azure Functions", "Azure Monitor"]
     },
     {
       "category": "GCP",
-      "technologies": ["Cloud Composer", "Storage", "AI Studio", "Vertex AI", "SDK", "BigQuery"]
+      "technologies": ["BigQuery", "Cloud Composer", "Cloud Storage", "Vertex AI", "Google AI Studio"]
+    },
+    {
+      "category": "Microsoft Fabric",
+      "technologies": ["OneLake", "Lakehouse", "Warehouse", "Data Factory", "Data Pipelines", "Spark Notebooks", "Semantic Models", "Power BI", "Dataflows Gen2", "Deployment Pipelines"]
     },
     {
       "category": "Databricks",
-      "technologies": ["Unity Catalogs", "Jobs/Scheduling", "Repositories", "REST API", "Databricks SQL"]
+      "technologies": ["Unity Catalog", "Delta Lake", "Delta Live Tables", "Auto Loader", "Workflows/Jobs", "Delta Sharing", "Databricks SQL"]
     },
     {
       "category": "Snowflake",
-      "technologies": ["Snowpark", "Snowflake SQL", "Data Sharing", "Streams & Tasks", "Dynamic Tables", "Snowpipe"]
+      "technologies": ["Snowpark", "Snowflake SQL", "Data Sharing", "Zero-Copy Cloning", "Time Travel", "Streams & Tasks", "Dynamic Tables", "Snowpipe"]
+    },
+    {
+      "category": "Data Engineering",
+      "technologies": ["dbt", "Apache Spark", "PySpark", "Airflow", "AirByte", "Fivetran", "Medallion Architecture", "CDC", "ELT/ETL"]
     },
     {
       "category": "Databases",
-      "technologies": ["SAP Hana", "MongoDB", "PostgreSQL", "MySQL", "SQL Server"]
+      "technologies": ["PostgreSQL", "SQL Server", "MySQL", "MongoDB", "SAP HANA", "DynamoDB"]
     },
     {
-      "category": "Programming",
-      "technologies": ["Python", "C#", "JavaScript", "React", "TypeScript", "Angular", "Flask", "Node.js"]
+      "category": "Languages & Frameworks",
+      "technologies": ["Python", "SQL", "Terraform", "dbt", "C#", "TypeScript", "React", "Flask"]
     },
     {
-      "category": "AI & ML",
-      "technologies": ["OpenAI API", "Anthropic API", "Gemini API", "AI Studio", "Claude Code", "Cursor", "LangChain", "RAG", "Vector Databases"]
+      "category": "AI & GenAI",
+      "technologies": ["OpenAI API", "Anthropic API", "Gemini API", "LangChain", "RAG", "Vector Databases", "Claude Code", "Cursor"]
     },
     {
       "category": "Infrastructure & DevOps",
-      "technologies": ["Terraform", "Docker", "GitHub Actions", "Bitbucket Pipelines", "CI/CD"]
-    },
-    {
-      "category": "Data Engineering Tools",
-      "technologies": ["Airflow", "AirByte", "DBT", "FiveTran", "Spark", "Hadoop"]
-    },
-    {
-      "category": "Python Packages",
-      "technologies": ["Pandas", "Spark", "NumPy", "Beautiful Soup", "Selenium", "Flask"]
+      "technologies": ["Terraform", "Terragrunt", "GitHub Actions", "Bitbucket Pipelines", "Docker", "CI/CD"]
     }
   ],
   "Contact": {
     "name": "Kevin Singh",
-    "title": "Senior Data Engineer",
+    "title": "Principal Data Engineer",
     "email": "kevinsingh.developer@gmail.com",
     "phone": "646-244-7509",
     "address": "559 Hawkins Rd, Selden, NY, 11784",
     "linkedin": "https://www.linkedin.com/in/kevin-singh-908547b4",
     "github": "https://github.com/kevinsinghdeveloper",
-    "website": "http://thekevinsingh.com"
+    "website": "https://thekevinsingh.com"
   },
-  "Summary": "Data Engineer with 10+ years of experience designing and optimizing data solutions across traditional and modern architectures. Skilled in conducting data discovery calls and collaborative working sessions. Recently applied Generative AI to enhance pipelines, enabling smarter automation and insights. Expert in cloud data warehouses (AWS, Azure, GCP), ETL/ELT development, and building scalable data infrastructure for enterprise analytics. Also builds full-stack applications and AWS cloud infrastructure as side projects, deploying production SaaS apps on serverless architectures using Terraform, GitHub Actions CI/CD, and modern web frameworks (React, Flask)."
+  "Summary": "Principal Data Engineer with 12+ years of experience architecting enterprise data platforms, modernizing analytics ecosystems, and delivering scalable cloud data solutions. Skilled in data strategy, Lakehouse architecture (Microsoft Fabric, Databricks, Snowflake), ETL/ELT engineering, and AI-ready data platforms. Experienced across AWS, Azure, and GCP, with a track record of leading data discovery, defining modernization roadmaps, and delivering trusted analytics foundations for enterprise organizations."
 }
